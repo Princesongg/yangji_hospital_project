@@ -1,7 +1,7 @@
 ﻿import './DepartmentCard.css';
 
 const DepartmentCard = ({ department, onSelect }) => (
-    <button className="department-card" type="button" onClick={() => onSelect(department)} aria-label={`${department.name.replaceAll('\n', '')} 바로가기`}>
+    <button className={`department-card${department.name.replaceAll('\n', '').length > 4 ? ' department-card--long-name' : ''}`} type="button" onClick={() => onSelect(department)} aria-label={`${department.name.replaceAll('\n', '')} 바로가기`}>
         <span className="department-card__name">{department.name}</span>
         <span className="department-card__icons" aria-hidden="true">
             <img className="department-card__icon department-card__icon--default" src={department.icon} alt="" />

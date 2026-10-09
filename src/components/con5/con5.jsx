@@ -41,6 +41,8 @@ const Con5 = () => {
                         <button className="con5__card" type="button" onClick={() => openNews(item)} aria-haspopup="dialog" aria-controls="con5-news-dialog">
                             <span className={`con5__image con5__image--${item.type}`}><img src={item.image} alt="" loading="lazy" /></span>
                             <span className="con5__caption">{item.caption}</span>
+                            <span className="con5__mobile-summary">{newsDetails[item.type].summary}</span>
+                            <span className="con5__mobile-more">더보기 +</span>
                         </button>
                     </li>
                 ))}

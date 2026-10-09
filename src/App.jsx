@@ -8,6 +8,7 @@ import Con5 from './components/con5/con5';
 import Con6 from './components/con6/con6';
 import Con7 from './components/con7/con7';
 import Footer from './components/footer/Footer';
+import QuickMenu from './components/quick-menu/QuickMenu';
 
 const App = () => (
     <>
@@ -22,6 +23,7 @@ const App = () => (
         <Con7 />
     </main>
     <Footer />
+    <QuickMenu />
     </>
 );
 

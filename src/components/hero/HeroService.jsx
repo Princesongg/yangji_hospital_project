@@ -1,5 +1,8 @@
 ﻿import './HeroService.css';
 
+import { mobileAsset, mobileAssets } from '../../mobile-assets';
+const mobileIcons = { reservation: 'imgGroup5', certificate: 'imgGroup6', checkup: 'imgGroup1', location: 'imgGroup1' };
+
 const HeroService = ({ label, icon, onClick }) => (
     <button className="hero-service" type="button" onClick={onClick}>
         <span className="hero-service__box">
@@ -9,6 +12,7 @@ const HeroService = ({ label, icon, onClick }) => (
             </span>
         </span>
         <span className="hero-service__label">{label}</span>
+        <img className="hero-service__mobile-icon" src={mobileAsset(mobileAssets[mobileIcons[icon]])} alt="" />
     </button>
 );
 

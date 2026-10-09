@@ -2,9 +2,13 @@
 import { centers } from './centers';
 import './con2.css';
 
+import { mobileAsset, mobileAssets } from '../../mobile-assets';
+const mobileCenterImages = ['imgCard', 'imgCard1', 'imgCard2', 'imgCard3', 'imgCard4', 'imgCard5', 'imgCard6', 'imgCard7', 'imgCard8', 'imgCard9', 'imgCard10', 'imgCard11'];
+
 const Con2 = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const dialogRef = useRef(null);
+    const mobileDetailRef = useRef(null);
     const center = centers[activeIndex];
 
     const selectCenter = (index) => {
@@ -31,6 +35,20 @@ const Con2 = () => {
                 <h2 id="con2-title">양지병원 <strong>진료센터</strong></h2>
             </header>
 
+            <div className="con2__mobile-rail" aria-label="진료센터 카드 목록" tabIndex={0}>
+                {centers.map((item, index) => <button className={`con2__mobile-card con2__mobile-card--${index + 1}`} type="button" key={item.id} onClick={() => { setActiveIndex(index); mobileDetailRef.current.showModal(); mobileDetailRef.current.scrollTop = 0; }} aria-haspopup="dialog" aria-controls="center-mobile-detail">
+                    <img src={mobileAsset(mobileAssets[mobileCenterImages[index]])} alt="" loading="lazy" />
+                    <span className="con2__mobile-card-title">{item.menu}</span>
+                    <span className="con2__mobile-card-description">{item.description}</span>
+                    <span className="con2__mobile-card-link">바로가기 +</span>
+                </button>)}
+            </div>
+            <dialog className="con2__directory con2__mobile-detail" id="center-mobile-detail" ref={mobileDetailRef} aria-labelledby="center-mobile-title">
+                <header className="con2__directory-heading"><h3 id="center-mobile-title">{center.menu}</h3><form method="dialog"><button autoFocus>닫기</button></form></header>
+                <img src={center.image} alt={`${center.menu} 의료 현장`} />
+                <p>{center.description}</p>
+                <div>{center.details.map((segment, index) => <span key={index}>{segment.text}</span>)}</div>
+            </dialog>
             <div className="con2__menu">
                 <div className="con2__tabs" role="tablist" aria-label="진료센터 선택">
                     {[centers.slice(0, 6), centers.slice(6)].map((row, rowIndex) => (

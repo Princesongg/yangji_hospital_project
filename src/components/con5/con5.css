@@ -6,8 +6,8 @@
 .con5__heading h2 { margin: calc(30 * var(--con5-unit)) 0 0; font-size: calc(42 * var(--con5-unit)); font-weight: 500; line-height: 1.2; }
 .con5__heading h2 strong { color: #ed1c24; font-weight: 600; }
 .con5__cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(50 * var(--con5-unit)); width: calc(1600 * var(--con5-unit)); margin: calc(82.6 * var(--con5-unit)) auto 0; padding: 0; list-style: none; }
-.con5__card { display: flex; flex-direction: column; align-items: center; gap: calc(10 * var(--con5-unit)); width: 100%; height: calc(626 * var(--con5-unit)); padding: 0; border: 0; background: transparent; color: #000; }
-.con5__image { position: relative; display: block; flex-shrink: 0; width: calc(420 * var(--con5-unit)); height: calc(520 * var(--con5-unit)); overflow: hidden; }
+.con5__card { display: flex; flex-direction: column; align-items: center; gap: calc(20 * var(--con5-unit)); width: 100%; height: calc(626 * var(--con5-unit)); padding: 0; border: 0; background: transparent; color: #000; }
+.con5__image { position: relative; display: block; flex-shrink: 0; width: calc(420 * var(--con5-unit)); height: calc(520 * var(--con5-unit)); border-radius: 16px; overflow: hidden; }
 .con5__image img { position: absolute; max-width: none; }
 .con5__image--pneumococcal img { width: 100%; height: 114.21%; left: 0; top: .01%; }
 .con5__image--checkup img { width: 100%; height: 143.56%; left: 0; top: -5.63%; }
@@ -88,7 +88,7 @@
     .con5__heading p { font-size: clamp(10px, 1.8vw, 14px); }
     .con5__heading h2 { margin-top: 20px; font-size: 32px; }
     .con5__cards { width: 100%; margin-top: 40px; gap: 24px; }
-    .con5__card { height: auto; gap: 16px; }
+    .con5__card { height: auto; gap: 20px; }
     .con5__image { width: 100%; height: auto; aspect-ratio: 21 / 26; }
     .con5__caption { font-size: 16px; line-height: 1.5; white-space: normal; word-break: keep-all; }
     .con5__view-all { margin-top: 36px; }

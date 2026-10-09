@@ -1,5 +1,7 @@
 import './con4.css';
 
+import { mobileAsset, mobileAssets } from '../../mobile-assets';
+const mobileVideos = ['img82', 'img83', 'img84'];
 const videos = [
     { tags: '#췌장염 #관악구종합병원 #양지병원', lines: ['담도·췌장 질환 진단과 치료 핵심,', '담도췌관조형술(ERCP)'] },
     { tags: '#유방암 #관악구종합병원 #신림양지병원', lines: ['여성암 1위 유방암, 30대까지 번졌다.', "'정기검진'이 매우 중요"] },
@@ -20,7 +22,7 @@ const Con4 = () => (
             <div className="con4__columns">
                 <article className="con4__featured">
                     <a className="con4__main-image" href={searchUrl(mainTitle)} target="_blank" rel="noopener noreferrer" aria-label={`${mainTitle} 유튜브에서 찾기 (새 창)`}>
-                        <img src="/images/con4/main-source-01.png" alt="다빈치 로봇수술 600례 달성!" loading="lazy" />
+                        <picture><source media="(max-width: 600px)" srcSet={mobileAsset(mobileAssets.img081)} /><img src="/images/con4/main-source-01.png" alt="다빈치 로봇수술 600례 달성!" loading="lazy" /></picture>
                     </a>
                     <div className="con4__description">
                         <h3><a href={searchUrl(mainTitle)} target="_blank" rel="noopener noreferrer">{mainTitle}</a></h3>
@@ -32,7 +34,7 @@ const Con4 = () => (
                     {videos.map((video, index) => (
                         <li key={video.lines[0]}>
                             <a className="con4__video" href={searchUrl(video.lines.join(' '))} target="_blank" rel="noopener noreferrer" aria-label={`${video.lines.join(' ')} 유튜브에서 찾기 (새 창)`}>
-                                <img className="con4__thumbnail" src={`/images/con4/video-0${index + 1}.png`} alt="" loading="lazy" />
+                                <picture className="con4__thumbnail-picture">{mobileVideos[index] && <source media="(max-width: 600px)" srcSet={mobileAsset(mobileAssets[mobileVideos[index]])} />}<img className="con4__thumbnail" src={`/images/con4/video-0${index + 1}.png`} alt="" loading="lazy" /></picture>
                                 <div className="con4__video-text">
                                     <p className="con4__tags">{video.tags}</p>
                                     <h3>{video.lines.map(line => <span key={line}>{line}</span>)}</h3>

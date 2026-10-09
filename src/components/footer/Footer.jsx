@@ -5,6 +5,7 @@ const menus = ['이용약관', '개인정보취급방침', '환자의권리와�
 export default function Footer() {
     return (
         <footer className="site-footer">
+            <p className="site-footer__mobile-title">에이치 플러스 양지병원</p>
             <ul className="site-footer__menus" aria-label="병원 이용 정보">
                 {menus.map(menu => <li key={menu}>{menu}</li>)}
             </ul>
@@ -26,6 +27,7 @@ export default function Footer() {
                 <img className="site-footer__h" src="/images/footer/logo-h.svg" alt="" />
                 <img className="site-footer__plus" src="/images/footer/logo-plus.svg" alt="" />
             </div>
+            <div className="site-footer__mobile-logo" aria-label="양지병원"><img src="/images/hero/logo-symbol.svg" alt="" /><img src="/images/hero/logo-text.svg" alt="양지병원" /></div>
         </footer>
     );
 }

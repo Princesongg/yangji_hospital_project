@@ -1,9 +1,11 @@
 ﻿import './con3.css';
 
+import { mobileAsset, mobileAssets } from '../../mobile-assets';
 const benefits = ['정확하고 안전한 수술', '최소통증 · 출혈감소', '감염위험 감소', '조기회복'];
 
 const Con3 = () => (
     <section className="con3" aria-labelledby="con3-title">
+        <img className="con3__mobile-background" src={mobileAsset(mobileAssets.img072)} alt="" loading="lazy" />
         <div className="con3__photo" aria-hidden="true">
             <div className="con3__image-frame">
                 <img src="/images/con2/center-06.png" alt="" />

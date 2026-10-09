@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import './con6.css';
+import { mobileAsset, mobileAssets } from '../../mobile-assets';
 
 const asset = name => `/images/con6/${name}`;
 
@@ -20,8 +21,14 @@ const Con6 = () => {
                     <img className="con6__handle" src={asset('divider-handle.svg')} alt="" />
                 </div>
             </div>
+            <div className="con6__mobile-graphic" aria-hidden="true">
+                <img className="con6__mobile-divider" src={mobileAsset(mobileAssets.imgVector2)} alt="" />
+                <img className="con6__mobile-divider-secondary" src={mobileAsset(mobileAssets.imgVector3)} alt="" />
+                <img className="con6__mobile-handle" src={mobileAsset(mobileAssets.imgVector4)} alt="" />
+                <img className="con6__mobile-chart" src={mobileAsset(mobileAssets.imgVector5)} alt="" />
+            </div>
             <div className="con6__content">
-                <div className="con6__logo"><img src={asset('logo.svg')} alt="" /></div>
+                <div className="con6__logo"><picture><source media="(max-width: 600px)" srcSet={mobileAsset(mobileAssets.imgGroup9)} /><img src={asset('logo.svg')} alt="" /></picture></div>
                 <p className="con6__slogan">앞선 의학, 따뜻한 마음</p>
                 <h2 id="con6-title"><span>H+</span>양지병원</h2>
                 <p className="con6__description">정확한 진단과 세심한 진료로 건강한 일상을 함께합니다.</p>
