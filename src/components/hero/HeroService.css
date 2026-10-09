@@ -1,0 +1,80 @@
+﻿.hero-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(10 * var(--u));
+    width: calc(120 * var(--u));
+    height: calc(167 * var(--u));
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #000;
+}
+
+.hero-service__box {
+    display: grid;
+    place-items: center;
+    width: calc(120 * var(--u));
+    height: calc(120 * var(--u));
+    flex-shrink: 0;
+    border: calc(1.5 * var(--u)) solid #8d8d8d;
+    border-radius: calc(30 * var(--u));
+    background: #fff;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.hero-service__icon-frame {
+    position: relative;
+    width: calc(70 * var(--u));
+    height: calc(70 * var(--u));
+}
+
+.hero-service__icon {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 70px;
+    height: 70px;
+    max-width: none;
+    transform: scale(calc(120 * var(--u) / 120px));
+    transform-origin: top left;
+    transition: opacity .2s;
+}
+
+.hero-service__icon--hover { opacity: 0; }
+
+.hero-service__label {
+    font-size: calc(20 * var(--u));
+    line-height: 1.2;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: color .2s;
+}
+
+.hero-service:focus-visible .hero-service__box {
+    border-color: var(--hospital-red);
+    box-shadow: 0 0 calc(4 * var(--u)) var(--hospital-red);
+}
+.hero-service:focus-visible .hero-service__label { color: var(--hospital-red); }
+.hero-service:focus-visible .hero-service__icon--default { opacity: 0; }
+.hero-service:focus-visible .hero-service__icon--hover { opacity: 1; }
+
+@media (hover: hover) {
+    .hero-service:hover .hero-service__box {
+        border-color: var(--hospital-red);
+        box-shadow: 0 0 calc(4 * var(--u)) var(--hospital-red);
+    }
+    .hero-service:hover .hero-service__label { color: var(--hospital-red); }
+    .hero-service:hover .hero-service__icon--default { opacity: 0; }
+    .hero-service:hover .hero-service__icon--hover { opacity: 1; }
+}
+
+@media (max-width: 900px) {
+    .hero-service__label { font-size: 14px; }
+}
+@media (max-width: 520px) {
+    .hero-service { --u: .55px; }
+    .hero-service__label { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .hero-service__box, .hero-service__icon, .hero-service__label { transition: none; }
+}
