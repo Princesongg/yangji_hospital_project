@@ -18,7 +18,9 @@
 .con1__view-label { position: absolute; left: 14.4%; top: 30%; color: #909090; font-size: calc(20 * var(--con-unit)); font-weight: 600; line-height: 1.2; }
 .con1__view-circle { position: absolute; left: 74.8%; top: 18.92%; width: 36.8px; height: 37.2973px; max-width: none; transform: scale(calc(200 * var(--con-unit) / 200px)); transform-origin: top left; }
 .con1__view-symbol { position: absolute; left: 78.5%; top: calc(5 * var(--con-unit)); font-size: calc(36 * var(--con-unit)); line-height: 1.2; color: #fff; }
-.con1__view-all:hover .con1__view-label { color: var(--con-red); }
+.con1__view-circle--hover { opacity: 0; }
+.con1__view-all:is(:hover, :focus-visible) .con1__view-label { color: var(--con-red); font-weight: 700; }
+.con1__view-all:is(:hover, :focus-visible) .con1__view-circle--hover { opacity: 1; }
 .con1__viewport { position: relative; display: flex; gap: calc(30 * var(--con-unit)); width: calc(1520 * var(--con-unit)); height: calc(597 * var(--con-unit)); margin: calc(91.6 * var(--con-unit)) auto 0; transform: translateX(calc(10 * var(--con-unit))); overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .con1__viewport::-webkit-scrollbar { display: none; }
 .con1__page { display: grid; flex: 0 0 100%; grid-template-columns: repeat(5, calc(260 * var(--con-unit))); grid-template-rows: repeat(2, calc(260 * var(--con-unit))); column-gap: calc(50 * var(--con-unit)); row-gap: calc(55 * var(--con-unit)); padding: calc(11 * var(--con-unit)) calc(10 * var(--con-unit)); scroll-snap-align: start; }

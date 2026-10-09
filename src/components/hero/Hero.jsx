@@ -41,9 +41,11 @@ const Hero = () => {
                     ))}
                 </nav>
                 <div className="hero-header__account" aria-label="회원 메뉴">
-                    <img className="hero-header__person" src={asset('person.svg')} alt="" />
-                    <button type="button" onClick={() => showNotice('로그인', '로그인 페이지는 준비 중입니다.')}>로그인</button>
-                    <span aria-hidden="true">/</span>
+                    <button className="hero-header__login" type="button" onClick={() => showNotice('로그인', '로그인 페이지는 준비 중입니다.')}>
+                        <span className="hero-header__person" aria-hidden="true" />
+                        <span>로그인</span>
+                    </button>
+                    <span className="hero-header__account-divider" aria-hidden="true">/</span>
                     <button type="button" onClick={() => showNotice('회원가입', '회원가입 페이지는 준비 중입니다.')}>회원가입</button>
                 </div>
             </header>

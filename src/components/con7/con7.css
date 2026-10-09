@@ -1,0 +1,44 @@
+.con7 { --con7-unit: min(.0520833333vw, 1px); max-width: 1920px; min-height: calc(800 * var(--con7-unit)); padding: calc(130 * var(--con7-unit)) 0; margin: 0 auto; background: #fff; color: #000; }
+.con7__heading { display: flex; flex-direction: column; align-items: center; gap: calc(20 * var(--con7-unit)); text-align: center; }
+.con7__heading p { margin: 0; font-size: calc(20 * var(--con7-unit)); font-weight: 300; line-height: 1.2; white-space: pre; }
+.con7__heading h2 { margin: 0; font-size: calc(42 * var(--con7-unit)); font-weight: 500; line-height: 1.2; }
+.con7__heading strong { color: #ed1c24; font-weight: 500; }
+.con7__institutions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: calc(20 * var(--con7-unit)); width: calc(1660 * var(--con7-unit)); margin: calc(45.6 * var(--con7-unit)) auto 0; padding: 0; list-style: none; }
+.con7__card { position: relative; width: 100%; aspect-ratio: 1; border-radius: calc(20 * var(--con7-unit)); overflow: hidden; background: #fff; }
+.con7__card { transition: box-shadow .2s ease; }
+@media (hover: hover) {
+    .con7__card:hover { box-shadow: 0 0 calc(6 * var(--con7-unit)) rgba(237, 28, 36, .3); }
+    .con7__card:hover .con7__card-heading p { color: #e88f93; }
+    .con7__card:hover .con7__card-heading h3 { color: #ed1c24; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .con7__card { transition: none; }
+}
+.con7__card-heading { position: absolute; top: 11.5%; left: 50%; transform: translateX(-50%); width: 100%; text-align: center; }
+.con7__card-heading p { margin: 0; color: #8d8d8d; font-size: calc(20 * var(--con7-unit)); font-weight: 400; line-height: 1.2; }
+.con7__card-heading h3 { margin: 0; color: #3d3d3d; font-size: calc(36 * var(--con7-unit)); font-weight: 600; line-height: 1.2; white-space: nowrap; }
+.con7__card-heading p, .con7__card-heading h3 { transition: color .2s ease; }
+@media (prefers-reduced-motion: reduce) {
+    .con7__card-heading p, .con7__card-heading h3 { transition: none; }
+}
+.con7__photo { position: absolute; left: 0; top: 37.5%; width: 100%; height: 62.5%; overflow: hidden; }
+.con7__photo img { position: absolute; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.con7__card--research .con7__photo img { width: 233.71%; height: 124.8%; left: -3.85%; top: -12.4%; object-fit: fill; }
+.con7__card--rehabilitation .con7__photo img { width: 182.25%; height: 234.74%; left: -3.25%; top: -32%; object-fit: fill; }
+.con7__tint { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(237,28,36,.3) 77.885%); }
+.con7__foundation { position: absolute; left: calc(50% + .22 * var(--con7-unit)); top: 88.5%; transform: translateX(-50%); display: flex; align-items: center; white-space: nowrap; }
+.con7__symbol { position: relative; flex-shrink: 0; width: calc(42.436 * var(--con7-unit)); height: calc(30.375 * var(--con7-unit)); }
+.con7__symbol img { position: absolute; left: 0; top: 0; max-width: none; transform: scale(calc(400 * var(--con7-unit) / 400px)); transform-origin: left top; }
+.con7__foundation p { margin: 0; color: #fff; font-size: calc(24 * var(--con7-unit)); font-weight: 800; line-height: 1.2; }
+@media (max-width: 900px) {
+    .con7 { --con7-unit: min(calc((100vw - 68px) / 800), 1px); min-height: 0; padding: 64px 24px; }
+    .con7__heading { gap: 20px; }
+    .con7__heading p { font-size: clamp(10px, 1.8vw, 14px); }
+    .con7__heading h2 { font-size: 32px; }
+    .con7__institutions { width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 36px; }
+}
+@media (max-width: 520px) {
+    .con7 { --con7-unit: min(calc((100vw - 48px) / 400), 1px); }
+    .con7__institutions { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .con7__card { max-width: 400px; margin: 0 auto; }
+}

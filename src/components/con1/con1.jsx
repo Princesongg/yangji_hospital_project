@@ -47,6 +47,7 @@ const Con1 = () => {
                 <img className="con1__view-background" src={asset('view-all.svg')} alt="" />
                 <span className="con1__view-label">{showAll ? '접기' : '전체보기'}</span>
                 <img className="con1__view-circle" src={asset('view-plus.svg')} alt="" />
+                <img className="con1__view-circle con1__view-circle--hover" src={asset('view-plus-hover.svg')} alt="" />
                 <span className="con1__view-symbol" aria-hidden="true">{showAll ? '−' : '+'}</span>
             </button>
 

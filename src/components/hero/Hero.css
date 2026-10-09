@@ -41,8 +41,10 @@
 .hero-header__nav button:nth-child(5) { width: calc(139 * var(--u)); }
 .hero-header__account { display: flex; align-items: center; gap: calc(10 * var(--u)); flex: 0 0 calc(183 * var(--u)); font-size: calc(20 * var(--u)); font-weight: 500; line-height: 1.2; white-space: nowrap; }
 .hero-header__account button { padding: 0; border: 0; background: transparent; color: #000; line-height: 1.2; }
-.hero-header__account button:hover, .hero-header__account button:focus-visible { color: var(--hospital-red); }
-.hero-header__person { width: 24px; height: 24px; max-width: none; flex-shrink: 0; transform: scale(calc(24 * var(--u) / 24px)); transform-origin: left center; margin-right: calc(24 * var(--u) - 24px); }
+.hero-header__account button:hover, .hero-header__account button:focus-visible { color: var(--hospital-red); font-weight: 800; }
+.hero-header__login { display: inline-flex; align-items: center; gap: calc(10 * var(--u)); }
+.hero-header__account-divider { color: #b5b5b5; }
+.hero-header__person { display: block; width: calc(24 * var(--u)); height: calc(24 * var(--u)); flex-shrink: 0; background-color: currentColor; mask: url('/images/hero/person.svg') center / contain no-repeat; }
 .hero { position: relative; width: calc(1700 * var(--u)); height: calc(800 * var(--u)); margin: 0 auto; }
 .hero__background { width: 100%; height: 100%; object-fit: cover; }
 .hero__headline { position: absolute; width: calc(698 * var(--u)); height: calc(128 * var(--u)); top: calc(274 * var(--u)); left: 50%; transform: translateX(-50%); color: #fff; }

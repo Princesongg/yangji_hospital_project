@@ -46,6 +46,7 @@ const Con2 = () => {
                     <img className="con2__view-background" src="/images/con1/view-all.svg" alt="" />
                     <span className="con2__view-label">전체보기</span>
                     <img className="con2__view-circle" src="/images/con1/view-plus.svg" alt="" />
+                    <img className="con2__view-circle con2__view-circle--hover" src="/images/con1/view-plus-hover.svg" alt="" />
                     <span className="con2__view-symbol" aria-hidden="true">+</span>
                 </button>
             </div>
