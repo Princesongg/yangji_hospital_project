@@ -1,26 +1,1781 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48 64x64" />
-    <link rel="icon" type="image/png" href="/favicon.png?v=3" sizes="64x64" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>양지병원 메인 랜딩 renewal</title>
-    <meta property="og:image" content="/images/pr_back.jpg" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에이치플러스 양지병원</title>
+    <meta property="og:image" content="images/pr_back.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="2000" />
     <meta property="og:image:height" content="1834" />
     <meta property="og:image:alt" content="양지병원 전경" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="/images/pr_back.jpg" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <meta name="twitter:image" content="images/pr_back.jpg" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+
+    <p id="skipNav"><a href="#content">본문 바로가기</a>
+    </p>
+
+    <div id="wrap">
+    <div class="hospital-home">
+    <header id="header" class="hero-header"><a class="hero-header__logo" href="index.html" aria-label="에이치 플러스 양지병원 홈"><picture><source media="(max-width: 600px)" srcSet="images/mobile/42ae7.svg"/><img class="hero-header__symbol" src="images/hero/logo-symbol.svg" alt=""/></picture><picture><source media="(max-width: 600px)" srcSet="images/mobile/3ccfb.svg"/><img class="hero-header__wordmark" src="images/hero/logo-text.svg" alt="양지병원"/></picture></a><button class="hero-mobile-menu" type="button" aria-label="전체 메뉴 열기" aria-haspopup="dialog" aria-controls="hero-mobile-navigation"><img src="images/mobile/0cc09.svg" alt=""/></button>
+    <nav class="hero-header__nav" aria-label="주요 메뉴"><button type="button">병원소개</button><button type="button">진료예약 및 상담</button><button type="button">부속병원  /  진료센터</button><button type="button">병원 안내</button><button type="button">서울효천의료재단</button>
+    </nav>
+    <div class="hero-header__account" aria-label="회원 메뉴"><button class="hero-header__login" type="button"><span class="hero-header__person" aria-hidden="true"></span><span>로그인</span></button><span class="hero-header__account-divider" aria-hidden="true">/</span><button type="button">회원가입</button>
+    </div>
+    </header>
+    <section id="hero" class="hero" aria-labelledby="hero-title"><picture><source media="(max-width: 600px)" srcSet="images/mobile/021e1.png"/><img class="hero__background" src="images/hero/hospital.png" alt="양지병원 내부 전경" fetchPriority="high"/></picture>
+    <div class="hero__headline">
+    <p class="hero__slogan">앞선 의학 , 따뜻한 마음
+    </p><picture><source media="(max-width: 600px)" srcSet="images/mobile/be141.svg"/><img class="hero__line" src="images/hero/headline-line.svg" alt=""/></picture>
+    <h1 id="hero-title" class="hero__title"><picture><source media="(max-width: 600px)" srcSet="images/mobile/8d171.svg"/><img class="hero__symbol" src="images/hero/hero-symbol.svg" alt=""/></picture><span>에이치 플러스 양지병원</span>
+    </h1>
+    </div>
+    <form class="hero-search" role="search"><label class="hero-search__label" for="hero-search-input">진료과 · 의료진 찾기</label>
+    <div class="hero-search__field"><input id="hero-search-input" type="search" placeholder="무엇을 도와드릴까요?" required="" autoComplete="off" value=""/><button class="hero-search__submit" type="submit" aria-label="진료과 또는 의료진 검색"><picture><source media="(max-width: 600px)" srcSet="images/mobile/ee84c.svg"/><img src="images/hero/search.svg" alt=""/></picture></button>
+    </div>
+    </form>
+    </section>
+    <section class="hero-services" aria-label="자주 찾는 서비스">
+    <div class="hero-services__links"><button class="hero-service" type="button"><span class="hero-service__box"><span class="hero-service__icon-frame" aria-hidden="true"><img class="hero-service__icon hero-service__icon--default" src="images/hero/reservation.svg" alt=""/><img class="hero-service__icon hero-service__icon--hover" src="images/hero/reservation-hover.svg" alt=""/></span></span><span class="hero-service__label">진료예약</span><img class="hero-service__mobile-icon" src="images/mobile/e77fe.svg" alt=""/></button><button class="hero-service" type="button"><span class="hero-service__box"><span class="hero-service__icon-frame" aria-hidden="true"><img class="hero-service__icon hero-service__icon--default" src="images/hero/certificate.svg" alt=""/><img class="hero-service__icon hero-service__icon--hover" src="images/hero/certificate-hover.svg" alt=""/></span></span><span class="hero-service__label">증명서 발급</span><img class="hero-service__mobile-icon" src="images/mobile/4d9b9.svg" alt=""/></button><button class="hero-service" type="button"><span class="hero-service__box"><span class="hero-service__icon-frame" aria-hidden="true"><img class="hero-service__icon hero-service__icon--default" src="images/hero/checkup.svg" alt=""/><img class="hero-service__icon hero-service__icon--hover" src="images/hero/checkup-hover.svg" alt=""/></span></span><span class="hero-service__label">건강검진</span><img class="hero-service__mobile-icon" src="images/mobile/bc3e4.svg" alt=""/></button><button class="hero-service" type="button"><span class="hero-service__box"><span class="hero-service__icon-frame" aria-hidden="true"><img class="hero-service__icon hero-service__icon--default" src="images/hero/location.svg" alt=""/><img class="hero-service__icon hero-service__icon--hover" src="images/hero/location-hover.svg" alt=""/></span></span><span class="hero-service__label">이용안내</span><img class="hero-service__mobile-icon" src="images/mobile/bc3e4.svg" alt=""/></button>
+    </div><button class="hero-emergency" type="button" aria-label="24시간 응급진료 안내"><picture><source media="(max-width: 600px)" srcSet="images/mobile/a8315.png"/><img class="hero-emergency__background" src="images/hero/emergency.png" alt=""/></picture><span class="hero-emergency__english">H   P L U S   Y A N G  J I   H O S P I T A L  </span><span class="hero-emergency__message"><span class="hero-emergency__red">24</span><span class="hero-emergency__gray">시간 </span><span class="hero-emergency__red">응급진료  </span><span class="hero-emergency__gray">잘하는 </span><span>안심병원</span></span><img class="hero-emergency__line" src="images/hero/banner-line.svg" alt=""/></button>
+    </section>
+    <dialog class="hero-service-dialog" aria-labelledby="_R_85_" aria-describedby="_R_85H1_"><button class="hero-service-dialog__close" type="button" autofocus="" aria-label="안내 창 닫기">×</button>
+    </dialog>
+    <dialog class="hero-mobile-navigation" id="hero-mobile-navigation" aria-labelledby="hero-mobile-navigation-title">
+    <header>
+    <h2 id="hero-mobile-navigation-title">전체 메뉴
+    </h2><button type="button" autofocus="" aria-label="전체 메뉴 닫기">×</button>
+    </header>
+    <nav aria-label="모바일 주요 메뉴"><a href="#con6-title">병원소개<span aria-hidden="true">›</span></a><a href="#con1-title">진료과 · 의료진<span aria-hidden="true">›</span></a><a href="#con2-title">진료센터<span aria-hidden="true">›</span></a><a href="#con5-title">병원소식<span aria-hidden="true">›</span></a><a href="#con7-title">서울효천의료재단<span aria-hidden="true">›</span></a><button type="button">진료예약 · 상담 <span aria-hidden="true">›</span></button><button type="button">병원 이용안내 <span aria-hidden="true">›</span></button>
+    </nav><a class="hero-mobile-navigation__phone" href="tel:18778875">콜센터 1877-8875</a>
+    </dialog>
+    <dialog class="hero-dialog" aria-labelledby="hero-dialog-title">
+    <h2 id="hero-dialog-title">
+    </h2>
+    <p>
+    </p>
+    <form method="dialog"><button autofocus="">확인</button>
+    </form>
+    </dialog>
+    </div>
+    <main id="content" class="site-main" tabindex="-1">
+    <section class="con1" aria-labelledby="con1-title">
+    <header class="con1__heading">
+    <p>에이치플러스 양지병원의 진료과를 소개합니다.
+    </p>
+    <h2 id="con1-title">양지병원 <strong>진료과</strong>
+    </h2>
+    </header><button class="con1__view-all" type="button" aria-expanded="false" aria-controls="department-list mobile-department-list"><img class="con1__view-background" src="images/con1/view-all.svg" alt=""/><span class="con1__view-label">전체보기</span><img class="con1__view-circle" src="images/con1/view-plus.svg" alt=""/><img class="con1__view-circle con1__view-circle--hover" src="images/con1/view-plus-hover.svg" alt=""/><span class="con1__view-symbol" aria-hidden="true">+</span></button>
+    <div class="con1__mobile-content">
+    <div id="mobile-department-list" class="con1__mobile-viewport" tabindex="0" aria-label="진료과 목록, 좌우로 넘겨보기">
+    <div class="con1__mobile-page con1__mobile-grid" role="group" aria-label="진료과 1 / 8 페이지"><button class="department-card" type="button" aria-label="일반내과 바로가기"><span class="department-card__name">일반내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-01.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-01-hover.png" alt=""/></span><span class="department-card__number">01 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="소화기내과 바로가기"><span class="department-card__name">소화기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-02.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-02-hover.png" alt=""/></span><span class="department-card__number">02 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="혈액종양내과 바로가기"><span class="department-card__name">혈액종양내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-03.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-03-hover.png" alt=""/></span><span class="department-card__number">03 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="순환기내과 바로가기"><span class="department-card__name">순환기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-04.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-04-hover.png" alt=""/></span><span class="department-card__number">04 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__mobile-page con1__mobile-grid" role="group" aria-label="진료과 2 / 8 페이지" inert=""><button class="department-card department-card--long-name" type="button" aria-label="내분비내과 바로가기"><span class="department-card__name">내분비내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-05.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-05-hover.png" alt=""/></span><span class="department-card__number">05 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신장내과 바로가기"><span class="department-card__name">신장내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-06.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-06-hover.png" alt=""/></span><span class="department-card__number">06 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="호흡기내과 바로가기"><span class="department-card__name">호흡기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-07.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-07-hover.png" alt=""/></span><span class="department-card__number">07 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="감염내과 바로가기"><span class="department-card__name">감염내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-08.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-08-hover.png" alt=""/></span><span class="department-card__number">08 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__mobile-page con1__mobile-grid" role="group" aria-label="진료과 3 / 8 페이지" inert=""><button class="department-card department-card--long-name" type="button" aria-label="유방갑상선외과 바로가기"><span class="department-card__name">유방
+갑상선외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-09.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-09-hover.png" alt=""/></span><span class="department-card__number">09 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="외과 바로가기"><span class="department-card__name">외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-10.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-10-hover.png" alt=""/></span><span class="department-card__number">10 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="정형외과 바로가기"><span class="department-card__name">정형외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-11.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-11-hover.png" alt=""/></span><span class="department-card__number">11 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신경외과 바로가기"><span class="department-card__name">신경외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-12.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-12-hover.png" alt=""/></span><span class="department-card__number">12 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__mobile-page con1__mobile-grid" role="group" aria-label="진료과 4 / 8 페이지" inert=""><button class="department-card" type="button" aria-label="신경과 바로가기"><span class="department-card__name">신경과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-13.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-13-hover.png" alt=""/></span><span class="department-card__number">13 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="재활의학과 바로가기"><span class="department-card__name">재활의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-14.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-14-hover.png" alt=""/></span><span class="department-card__number">14 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="산부인과 바로가기"><span class="department-card__name">산부인과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-15.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-15-hover.png" alt=""/></span><span class="department-card__number">15 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="비뇨기과 바로가기"><span class="department-card__name">비뇨기과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-16.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-16-hover.png" alt=""/></span><span class="department-card__number">16 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__mobile-page con1__mobile-grid" role="group" aria-label="진료과 5 / 8 페이지" inert=""><button class="department-card department-card--long-name" type="button" aria-label="심장혈관흉부외과 바로가기"><span class="department-card__name">심장혈관
+흉부외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-17.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-17-hover.png" alt=""/></span><span class="department-card__number">17 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="성형외과 바로가기"><span class="department-card__name">성형외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-18.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-18-hover.png" alt=""/></span><span class="department-card__number">18 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="소아청소년과 바로가기"><span class="department-card__name">소아청소년과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-19.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-19-hover.png" alt=""/></span><span class="department-card__number">19 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="이비인후과 바로가기"><span class="department-card__name">이비인후과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-20.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-20-hover.png" alt=""/></span><span class="department-card__number">20 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__mobile-page con1__mobile-grid" role="group" aria-label="진료과 6 / 8 페이지" inert=""><button class="department-card department-card--long-name" type="button" aria-label="정신건강의학과 바로가기"><span class="department-card__name">정신
+건강의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-21.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-21-hover.png" alt=""/></span><span class="department-card__number">21 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="가정의학과 바로가기"><span class="department-card__name">가정의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-22.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-22-hover.png" alt=""/></span><span class="department-card__number">22 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="영상의학과 바로가기"><span class="department-card__name">영상의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-23.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-23-hover.png" alt=""/></span><span class="department-card__number">23 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="응급의학과 바로가기"><span class="department-card__name">응급의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-24.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-24-hover.png" alt=""/></span><span class="department-card__number">24 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__mobile-page con1__mobile-grid" role="group" aria-label="진료과 7 / 8 페이지" inert=""><button class="department-card department-card--long-name" type="button" aria-label="진단검사의학과 바로가기"><span class="department-card__name">진단
+검사의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-25.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-25-hover.png" alt=""/></span><span class="department-card__number">25 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="명리과 바로가기"><span class="department-card__name">명리과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-26.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-26-hover.png" alt=""/></span><span class="department-card__number">26 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="마취통증의학과 바로가기"><span class="department-card__name">마취
+통증의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-27.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-27-hover.png" alt=""/></span><span class="department-card__number">27 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="직업환경의학과 바로가기"><span class="department-card__name">직업
+환경의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-28.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-28-hover.png" alt=""/></span><span class="department-card__number">28 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__mobile-page con1__mobile-grid" role="group" aria-label="진료과 8 / 8 페이지" inert=""><button class="department-card department-card--long-name" type="button" aria-label="중환자의학과 바로가기"><span class="department-card__name">중환자의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-29.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-29-hover.png" alt=""/></span><span class="department-card__number">29 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="치과(구강검진) 바로가기"><span class="department-card__name">치과
+(구강검진)</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-30.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-30-hover.png" alt=""/></span><span class="department-card__number">30 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="의생명연구원 바로가기"><span class="department-card__name">의생명연구원</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-31.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-31-hover.png" alt=""/></span><span class="department-card__number">31 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="건강증진센터 바로가기"><span class="department-card__name">건강증진센터</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-32.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-32-hover.png" alt=""/></span><span class="department-card__number">32 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    </div>
+    <nav class="con1__mobile-pagination" aria-label="모바일 진료과 페이지 선택"><button type="button" aria-label="진료과 1 페이지" aria-current="page"></button><button type="button" aria-label="진료과 2 페이지"></button><button type="button" aria-label="진료과 3 페이지"></button><button type="button" aria-label="진료과 4 페이지"></button><button type="button" aria-label="진료과 5 페이지"></button><button type="button" aria-label="진료과 6 페이지"></button><button type="button" aria-label="진료과 7 페이지"></button><button type="button" aria-label="진료과 8 페이지"></button>
+    </nav>
+    <p class="con1__mobile-hint" aria-live="polite">좌우로 넘겨보세요 · 1 / 8
+    </p>
+    </div>
+    <div id="department-list" class="con1__viewport" aria-label="진료과 목록">
+    <div class="con1__page" role="group" aria-label="진료과 1 / 4 페이지"><button class="department-card" type="button" aria-label="일반내과 바로가기"><span class="department-card__name">일반내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-01.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-01-hover.png" alt=""/></span><span class="department-card__number">01 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="소화기내과 바로가기"><span class="department-card__name">소화기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-02.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-02-hover.png" alt=""/></span><span class="department-card__number">02 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="혈액종양내과 바로가기"><span class="department-card__name">혈액종양내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-03.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-03-hover.png" alt=""/></span><span class="department-card__number">03 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="순환기내과 바로가기"><span class="department-card__name">순환기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-04.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-04-hover.png" alt=""/></span><span class="department-card__number">04 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="내분비내과 바로가기"><span class="department-card__name">내분비내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-05.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-05-hover.png" alt=""/></span><span class="department-card__number">05 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신장내과 바로가기"><span class="department-card__name">신장내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-06.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-06-hover.png" alt=""/></span><span class="department-card__number">06 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="호흡기내과 바로가기"><span class="department-card__name">호흡기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-07.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-07-hover.png" alt=""/></span><span class="department-card__number">07 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="감염내과 바로가기"><span class="department-card__name">감염내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-08.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-08-hover.png" alt=""/></span><span class="department-card__number">08 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="유방갑상선외과 바로가기"><span class="department-card__name">유방
+갑상선외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-09.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-09-hover.png" alt=""/></span><span class="department-card__number">09 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="외과 바로가기"><span class="department-card__name">외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-10.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-10-hover.png" alt=""/></span><span class="department-card__number">10 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__page" role="group" aria-label="진료과 2 / 4 페이지" inert=""><button class="department-card" type="button" aria-label="정형외과 바로가기"><span class="department-card__name">정형외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-11.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-11-hover.png" alt=""/></span><span class="department-card__number">11 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신경외과 바로가기"><span class="department-card__name">신경외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-12.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-12-hover.png" alt=""/></span><span class="department-card__number">12 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신경과 바로가기"><span class="department-card__name">신경과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-13.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-13-hover.png" alt=""/></span><span class="department-card__number">13 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="재활의학과 바로가기"><span class="department-card__name">재활의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-14.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-14-hover.png" alt=""/></span><span class="department-card__number">14 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="산부인과 바로가기"><span class="department-card__name">산부인과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-15.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-15-hover.png" alt=""/></span><span class="department-card__number">15 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="비뇨기과 바로가기"><span class="department-card__name">비뇨기과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-16.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-16-hover.png" alt=""/></span><span class="department-card__number">16 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="심장혈관흉부외과 바로가기"><span class="department-card__name">심장혈관
+흉부외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-17.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-17-hover.png" alt=""/></span><span class="department-card__number">17 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="성형외과 바로가기"><span class="department-card__name">성형외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-18.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-18-hover.png" alt=""/></span><span class="department-card__number">18 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="소아청소년과 바로가기"><span class="department-card__name">소아청소년과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-19.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-19-hover.png" alt=""/></span><span class="department-card__number">19 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="이비인후과 바로가기"><span class="department-card__name">이비인후과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-20.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-20-hover.png" alt=""/></span><span class="department-card__number">20 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__page" role="group" aria-label="진료과 3 / 4 페이지" inert=""><button class="department-card department-card--long-name" type="button" aria-label="정신건강의학과 바로가기"><span class="department-card__name">정신
+건강의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-21.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-21-hover.png" alt=""/></span><span class="department-card__number">21 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="가정의학과 바로가기"><span class="department-card__name">가정의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-22.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-22-hover.png" alt=""/></span><span class="department-card__number">22 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="영상의학과 바로가기"><span class="department-card__name">영상의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-23.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-23-hover.png" alt=""/></span><span class="department-card__number">23 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="응급의학과 바로가기"><span class="department-card__name">응급의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-24.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-24-hover.png" alt=""/></span><span class="department-card__number">24 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="진단검사의학과 바로가기"><span class="department-card__name">진단
+검사의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-25.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-25-hover.png" alt=""/></span><span class="department-card__number">25 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="명리과 바로가기"><span class="department-card__name">명리과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-26.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-26-hover.png" alt=""/></span><span class="department-card__number">26 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="마취통증의학과 바로가기"><span class="department-card__name">마취
+통증의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-27.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-27-hover.png" alt=""/></span><span class="department-card__number">27 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="직업환경의학과 바로가기"><span class="department-card__name">직업
+환경의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-28.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-28-hover.png" alt=""/></span><span class="department-card__number">28 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="중환자의학과 바로가기"><span class="department-card__name">중환자의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-29.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-29-hover.png" alt=""/></span><span class="department-card__number">29 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="치과(구강검진) 바로가기"><span class="department-card__name">치과
+(구강검진)</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-30.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-30-hover.png" alt=""/></span><span class="department-card__number">30 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <div class="con1__page" role="group" aria-label="진료과 4 / 4 페이지" inert=""><button class="department-card department-card--long-name" type="button" aria-label="의생명연구원 바로가기"><span class="department-card__name">의생명연구원</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-31.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-31-hover.png" alt=""/></span><span class="department-card__number">31 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="건강증진센터 바로가기"><span class="department-card__name">건강증진센터</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-32.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-32-hover.png" alt=""/></span><span class="department-card__number">32 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    </div>
+    <div class="con1__arrows"><img class="con1__arrow-image" src="images/con1/arrows.svg" alt=""/><button type="button" class="con1__previous" aria-label="이전 진료과 페이지" aria-controls="department-list"><img class="con1__mobile-arrow" src="images/con1/arrows.svg" alt=""/></button><button type="button" class="con1__next" aria-label="다음 진료과 페이지" aria-controls="department-list"><img class="con1__mobile-arrow" src="images/con1/arrows.svg" alt=""/></button>
+    </div>
+    <nav class="con1__pagination" aria-label="진료과 페이지 선택"><button type="button" aria-label="진료과 1 페이지" aria-current="page"><img src="images/con1/pagination-on.svg" alt=""/></button><button type="button" aria-label="진료과 2 페이지"><img src="images/con1/pagination-off.svg" alt=""/></button><button type="button" aria-label="진료과 3 페이지"><img src="images/con1/pagination-off.svg" alt=""/></button><button type="button" aria-label="진료과 4 페이지"><img src="images/con1/pagination-off.svg" alt=""/></button>
+    </nav>
+    <p class="con1__sr-only" aria-live="polite">진료과 1 / 4 페이지
+    </p>
+    <dialog class="con1__dialog" aria-labelledby="department-dialog-title">
+    <h3 id="department-dialog-title">
+    </h3>
+    <p>진료과 상세 안내는 준비 중입니다.
+    </p>
+    <form method="dialog"><button autofocus="">확인</button>
+    </form>
+    </dialog>
+    </section>
+    <section class="con2" aria-labelledby="con2-title">
+    <header class="con2__heading">
+    <p>양지병원의 진료센터는 최상의 의료서비스를 제공합니다.
+    </p>
+    <h2 id="con2-title">양지병원 <strong>진료센터</strong>
+    </h2>
+    </header>
+    <div class="con2__mobile-rail" aria-label="진료센터 카드 목록" tabindex="0"><button class="con2__mobile-card con2__mobile-card--1" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/48ba8.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">H+소화기병원</span><span class="con2__mobile-card-description">H+양지병원 부속 H+소화기병원은
+소화기 질환 특화 병원입니다. </span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--2" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/66484.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">H+국제병원</span><span class="con2__mobile-card-description">H＋양지병원 부속 ‘H＋국제병원’은 국내/외에 거주하고 있는 외국인 환자분들을 위한 특화 병원입니다. </span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--3" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/4c340.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">심장혈관만성센터</span><span class="con2__mobile-card-description">급성 심근 경색, 협심증 등의 급성 질환과 고혈압, 심장판막증, 심부전 등의 만성 질환을 담당하는 센터</span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--4" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/56494.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">척추관절센터</span><span class="con2__mobile-card-description">척추관절센터는 최소침습 수술, 최소절개 인공관절 수술, 관절 내시경,
+체외충격파 치료법(ESWT) 등을 시행</span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--5" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/d051c.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">뇌신경센터</span><span class="con2__mobile-card-description">국내 뇌신경 중재 치료 권위자인 영상의학과 이웅재 전문의가 고난이도 시술을 수행하고 있으며, 뇌MRI 상 우연히 발견되는 머리 속의 시한 폭탄이라 알려진
+뇌동맥류를 안전하게 잘 치료하는 것으로 알려져 있습니다.
+</span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--6" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/2c48a.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">로봇수술센터</span><span class="con2__mobile-card-description">에이치플러스 양지병원 로봇수술센터는 세계적으로 인정 받는 다빈치 로봇 수술 시스템(Da Vinci Surgical System)을 도입하여, 고난이도 수술을 더욱 정밀하고 안전하게 시행하고 있습니다. </span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--7" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/e48d7.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">어지럼증센터</span><span class="con2__mobile-card-description">에이치플러스 양지병원 어지럼증 센터는 신경과를 중심으로 신경외과, 순환기 내과, 영상의학과, 응급의학과, 이비인후과, 재활의학과 등 어지럼증이 발생할 수 있는 다양한 질환에 대한 다학제적 접근을 특징으로 합니다.</span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--8" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/2a1f6.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">암통합케어센터</span><span class="con2__mobile-card-description">10개팀 이상의 전문의 통합협진진료로 입체적인 환자 개별치료
+국내최초 정신건강의학과 전문의 심리치료 병행
+노인암다학제팀 구성으로 최선의 노인암치료 결정</span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--9" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/dc346.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">비만당뇨수술센터</span><span class="con2__mobile-card-description">에이치플러스 양지병원 비만당뇨수술 센터(Metabolic &amp; Bariatric surgery center)에서는 고도비만 분야의 1인자인 前 순천향대학교 서울병원 김용진 교수를 초빙해 비만당뇨수술 센터를 개설했습니다.</span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--10" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/99137.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">건강증진센터</span><span class="con2__mobile-card-description">현대인들의 불규칙한 식생활 습관, 스트레스, 운동부족 등으로 성인병과
+만성질환이 날로 증가하는 가운데, 건강증진센터에서는 빠르고 정확한 검진
+시스템과 대ㆍ내외 협진 시스템의 구축을 통해 진단에서 치료까지의 원스톱
+개인 맞춤 의료서비스를 제공하고 있습니다.</span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--11" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/917d4.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">호흡기센터</span><span class="con2__mobile-card-description">호흡기센터는 호흡기에 발생할 수 있는 질환의 진료를 담당하고 있습니다.
+감염내과 하의 감염관리실 운영으로 감염질환 대처 시스템을 구축하고 있으며
+전 세계 최초로 워크스루 선별진료소를 개발 ∙ 운영하여 코로나19 확산 방지에 앞장섰습니다.
+</span><span class="con2__mobile-card-link">바로가기 +</span></button><button class="con2__mobile-card con2__mobile-card--12" type="button" aria-haspopup="dialog" aria-controls="center-mobile-detail"><img src="images/mobile/5177c.png" alt="" loading="lazy"/><span class="con2__mobile-card-title">응급의료센터</span><span class="con2__mobile-card-description">응급의료센터는 보건복지부 지정 지역응급의료센터로 전문의 12인으로
+상시 대기하여 365일 신속하고 정확한 치료가 가능하며 대학병원과 원활한
+협력체계를 갖추어 중증질환 및 응급 상황에도 빠른 처치 및 신중한 진료로
+양질의 의료 서비스를 제공합니다.
+</span><span class="con2__mobile-card-link">바로가기 +</span></button>
+    </div>
+    <dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">H+소화기병원
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-01.png" alt="H+소화기병원 의료 현장"/>
+    <p>H+양지병원 부속 H+소화기병원은
+소화기 질환 특화 병원입니다.
+    </p>
+    <div><span>진료 분야
+</span><span>
+</span><span>역류성 식도염, 위염, 위궤양/십이지장궤양, 위암, 대장암, 대장용종, 간염, 간경변증, 간암, 과민성 대장염,
+당낭염, 담석, 담낭용종, 췌장염, 췌장암
+치료내시경으로 조기암(위 · 대장), 용종 등 수술 없이 당일 치료 가능
+
+국내 치료내시경 분야의 최고 의료수준 보유 : 내시경점막절제술(EMR), 내시경점막하박리술(ESD),
+내시경적역행담췌관조영술(ERCP), 초음파내시경(EUS) 등
+
+복부응급환자 24시간 응급 시술/수술 시스템</span>
+    </div>
+    </dialog>
+    <div class="con2__menu">
+    <div class="con2__tabs" role="tablist" aria-label="진료센터 선택">
+    <div class="con2__tab-row con2__tab-row--1" role="presentation"><button id="center-tab-1" type="button" role="tab" aria-selected="true" aria-controls="center-panel" tabindex="0">H+소화기병원</button><button id="center-tab-2" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">H+국제병원</button><button id="center-tab-3" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">심장혈관만성센터</button><button id="center-tab-4" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">척추관절센터</button><button id="center-tab-5" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">뇌신경센터</button><button id="center-tab-6" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">로봇수술센터</button>
+    </div>
+    <div class="con2__tab-row con2__tab-row--2" role="presentation"><button id="center-tab-7" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">어지럼증센터</button><button id="center-tab-8" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">암통합케어센터</button><button id="center-tab-9" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">비만당뇨수술센터</button><button id="center-tab-10" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">건강증진센터</button><button id="center-tab-11" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">호흡기센터</button><button id="center-tab-12" type="button" role="tab" aria-selected="false" aria-controls="center-panel" tabindex="-1">응급의료센터</button>
+    </div><img class="con2__menu-line" src="images/con2/menu-line.svg" alt=""/>
+    </div><button class="con2__view-all" type="button" aria-haspopup="dialog" aria-controls="center-directory"><img class="con2__view-background" src="images/con1/view-all.svg" alt=""/><span class="con2__view-label">전체보기</span><img class="con2__view-circle" src="images/con1/view-plus.svg" alt=""/><img class="con2__view-circle con2__view-circle--hover" src="images/con1/view-plus-hover.svg" alt=""/><span class="con2__view-symbol" aria-hidden="true">+</span></button>
+    </div>
+    <div class="con2__content">
+    <article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-1" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>H+소화기병원
+    </h3>
+    <p>H+양지병원 부속 H+소화기병원은
+소화기 질환 특화 병원입니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">역류성 식도염, 위염, 위궤양/십이지장궤양, 위암, 대장암, 대장용종, 간염, 간경변증, 간암, 과민성 대장염,
+당낭염, 담석, 담낭용종, 췌장염, 췌장암
+치료내시경으로 조기암(위 · 대장), 용종 등 수술 없이 당일 치료 가능
+
+국내 치료내시경 분야의 최고 의료수준 보유 : 내시경점막절제술(EMR), 내시경점막하박리술(ESD),
+내시경적역행담췌관조영술(ERCP), 초음파내시경(EUS) 등
+
+복부응급환자 24시간 응급 시술/수술 시스템</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><span class="con2__position con2__position--first" aria-live="polite"><strong>1</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo con2__photo--digestive"><img src="images/con2/center-01.png" alt="H+소화기병원 의료 현장"/>
+    </div>
+    </article>
+    </div>
+    <dialog id="center-directory" class="con2__directory" aria-labelledby="center-directory-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-directory-title">양지병원 진료센터
+    </h3>
+    <form method="dialog"><button type="submit" aria-label="진료센터 전체보기 닫기">닫기</button>
+    </form>
+    </header>
+    <div class="con2__directory-grid"><button type="button"><img src="images/con2/center-01.png" alt=""/><span>H+소화기병원</span></button><button type="button"><img src="images/con2/center-02.png" alt=""/><span>H+국제병원</span></button><button type="button"><img src="images/con2/center-03.png" alt=""/><span>심장혈관만성센터</span></button><button type="button"><img src="images/con2/center-04.png" alt=""/><span>척추관절센터</span></button><button type="button"><img src="images/con2/center-05.png" alt=""/><span>뇌신경센터</span></button><button type="button"><img src="images/con2/center-06.png" alt=""/><span>로봇수술센터</span></button><button type="button"><img src="images/con2/center-07.png" alt=""/><span>어지럼증센터</span></button><button type="button"><img src="images/con2/center-08.png" alt=""/><span>암통합케어센터</span></button><button type="button"><img src="images/con2/center-09.png" alt=""/><span>비만당뇨수술센터</span></button><button type="button"><img src="images/con2/center-10.png" alt=""/><span>건강증진센터</span></button><button type="button"><img src="images/con2/center-11.png" alt=""/><span>호흡기센터</span></button><button type="button"><img src="images/con2/center-12.png" alt=""/><span>응급의료센터</span></button>
+    </div>
+    </dialog>
+    </section>
+    <section class="con3" aria-labelledby="con3-title"><img class="con3__mobile-background" src="images/mobile/fdc44.png" alt="" loading="lazy"/>
+    <div class="con3__photo" aria-hidden="true">
+    <div class="con3__image-frame"><img src="images/con2/center-06.png" alt=""/>
+    </div>
+    <div class="con3__shade">
+    </div>
+    </div>
+    <div class="con3__content">
+    <div class="con3__heading">
+    <p class="con3__english">H   P  L  U  S   Y  A  N  G  J  I   H  O  S  P  I  T  A  L
+    </p>
+    <div class="con3__titles">
+    <p class="con3__intro">로봇수술도 역시 <span>에이치플러스 양지병원</span>입니다.
+    </p>
+    <h2 id="con3-title">다빈치 로봇 수술
+    </h2>
+    </div>
+    </div>
+    <ul class="con3__benefits">
+    <li><span class="con3__check"><img src="images/con3/check.svg" alt=""/></span><span>정확하고 안전한 수술</span>
+    </li>
+    <li><span class="con3__check"><img src="images/con3/check.svg" alt=""/></span><span>최소통증 · 출혈감소</span>
+    </li>
+    <li><span class="con3__check"><img src="images/con3/check.svg" alt=""/></span><span>감염위험 감소</span>
+    </li>
+    <li><span class="con3__check"><img src="images/con3/check.svg" alt=""/></span><span>조기회복</span>
+    </li>
+    </ul>
+    </div>
+    </section>
+    <section class="con4" aria-labelledby="con4-title">
+    <div class="con4__inner">
+    <header class="con4__heading">
+    <p>H   P L U S   Y A N G  J I   H O S P I T A L  Y O U T U B E
+    </p>
+    <h2 id="con4-title">양지병원 <strong>유튜브</strong> 채널
+    </h2>
+    </header>
+    <div class="con4__heading-line" aria-hidden="true"><img src="images/con4/heading-line.svg" alt=""/>
+    </div>
+    <div class="con4__columns">
+    <article class="con4__featured"><a class="con4__main-image" href="https://www.youtube.com/results?search_query=%EC%97%90%EC%9D%B4%EC%B9%98%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EC%96%91%EC%A7%80%EB%B3%91%EC%9B%90%20%EB%8B%A4%EB%B9%88%EC%B9%98%20%EB%A1%9C%EB%B4%87%20%EC%88%98%EC%88%A0%20600%EB%A1%80%20%EB%8B%AC%EC%84%B1%20%EB%A9%80%ED%8B%B0" target="_blank" rel="noopener noreferrer" aria-label="다빈치 로봇 수술 600례 달성 멀티 유튜브에서 찾기 (새 창)"><picture><source media="(max-width: 600px)" srcSet="images/mobile/d60bf.png"/><img src="images/con4/main-source-01.png" alt="다빈치 로봇수술 600례 달성!" loading="lazy"/></picture></a>
+    <div class="con4__description">
+    <h3><a href="https://www.youtube.com/results?search_query=%EC%97%90%EC%9D%B4%EC%B9%98%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EC%96%91%EC%A7%80%EB%B3%91%EC%9B%90%20%EB%8B%A4%EB%B9%88%EC%B9%98%20%EB%A1%9C%EB%B4%87%20%EC%88%98%EC%88%A0%20600%EB%A1%80%20%EB%8B%AC%EC%84%B1%20%EB%A9%80%ED%8B%B0" target="_blank" rel="noopener noreferrer">다빈치 로봇 수술 600례 달성 멀티</a>
+    </h3>
+    <p class="con4__tags">#관악구로봇수술 #금천구로봇수술 #구로구로봇수술 #신림로봇수술 #봉천로봇수술 #흉터걱정없는수술 #회복빠른수술 #출혈적은수술 #차세대수술 #로봇자궁근종 #신림자궁근종로봇수술 #고난도수술 #정밀수술 #다빈치로봇수술병원 #로봇수술 #자궁근종수술 #관악구산부인과
+    </p>
+    <p>저희 에이치플러스 양지병원이 다빈치 로봇수술 장비 도입 및 센터 활성화<br/>이후 약 2년 만에 누적 로봇수술 600례를 돌파했습니다.
+    </p>
+    </div>
+    </article>
+    <ul class="con4__list">
+    <li><a class="con4__video" href="https://www.youtube.com/results?search_query=%EC%97%90%EC%9D%B4%EC%B9%98%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EC%96%91%EC%A7%80%EB%B3%91%EC%9B%90%20%EB%8B%B4%EB%8F%84%C2%B7%EC%B7%8C%EC%9E%A5%20%EC%A7%88%ED%99%98%20%EC%A7%84%EB%8B%A8%EA%B3%BC%20%EC%B9%98%EB%A3%8C%20%ED%95%B5%EC%8B%AC%2C%20%EB%8B%B4%EB%8F%84%EC%B7%8C%EA%B4%80%EC%A1%B0%ED%98%95%EC%88%A0(ERCP)" target="_blank" rel="noopener noreferrer" aria-label="담도·췌장 질환 진단과 치료 핵심, 담도췌관조형술(ERCP) 유튜브에서 찾기 (새 창)"><picture class="con4__thumbnail-picture"><source media="(max-width: 600px)" srcSet="images/mobile/9ddf1.png"/><img class="con4__thumbnail" src="images/con4/video-01.png" alt="" loading="lazy"/></picture>
+    <div class="con4__video-text">
+    <p class="con4__tags">#췌장염 #관악구종합병원 #양지병원
+    </p>
+    <h3><span>담도·췌장 질환 진단과 치료 핵심,</span><span>담도췌관조형술(ERCP)</span>
+    </h3>
+    <p class="con4__channel">에이치플러스양지병원
+    </p>
+    </div></a>
+    <div class="con4__list-line" aria-hidden="true"><img src="images/con4/list-line-01.svg" alt=""/>
+    </div>
+    </li>
+    <li><a class="con4__video" href="https://www.youtube.com/results?search_query=%EC%97%90%EC%9D%B4%EC%B9%98%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EC%96%91%EC%A7%80%EB%B3%91%EC%9B%90%20%EC%97%AC%EC%84%B1%EC%95%94%201%EC%9C%84%20%EC%9C%A0%EB%B0%A9%EC%95%94%2C%2030%EB%8C%80%EA%B9%8C%EC%A7%80%20%EB%B2%88%EC%A1%8C%EB%8B%A4.%20&#x27;%EC%A0%95%EA%B8%B0%EA%B2%80%EC%A7%84&#x27;%EC%9D%B4%20%EB%A7%A4%EC%9A%B0%20%EC%A4%91%EC%9A%94" target="_blank" rel="noopener noreferrer" aria-label="여성암 1위 유방암, 30대까지 번졌다. &#x27;정기검진&#x27;이 매우 중요 유튜브에서 찾기 (새 창)"><picture class="con4__thumbnail-picture"><source media="(max-width: 600px)" srcSet="images/mobile/65ab5.png"/><img class="con4__thumbnail" src="images/con4/video-02.png" alt="" loading="lazy"/></picture>
+    <div class="con4__video-text">
+    <p class="con4__tags">#유방암 #관악구종합병원 #신림양지병원
+    </p>
+    <h3><span>여성암 1위 유방암, 30대까지 번졌다.</span><span>&#x27;정기검진&#x27;이 매우 중요</span>
+    </h3>
+    <p class="con4__channel">에이치플러스양지병원
+    </p>
+    </div></a>
+    <div class="con4__list-line" aria-hidden="true"><img src="images/con4/list-line-02.svg" alt=""/>
+    </div>
+    </li>
+    <li><a class="con4__video" href="https://www.youtube.com/results?search_query=%EC%97%90%EC%9D%B4%EC%B9%98%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EC%96%91%EC%A7%80%EB%B3%91%EC%9B%90%20%ED%83%88%EC%9E%A5%EC%88%98%EC%88%A0%201%2C000%EB%A1%80%20%EB%8F%8C%ED%8C%8C!%20%EB%A1%9C%EB%B4%87%EC%88%98%EC%88%A0%EB%A1%9C%20%ED%9D%89%ED%84%B0%C2%B7%ED%86%B5%EC%A6%9D%20%EA%B1%B1%EC%A0%95%20%EB%81%9D%20%F0%9F%93%8D%EA%B4%80%EC%95%85%EA%B5%AC%20%EC%A2%85%ED%95%A9%EB%B3%91%EC%9B%90" target="_blank" rel="noopener noreferrer" aria-label="탈장수술 1,000례 돌파! 로봇수술로 흉터·통증 걱정 끝 📍관악구 종합병원 유튜브에서 찾기 (새 창)"><picture class="con4__thumbnail-picture"><source media="(max-width: 600px)" srcSet="images/mobile/5585f.png"/><img class="con4__thumbnail" src="images/con4/video-03.png" alt="" loading="lazy"/></picture>
+    <div class="con4__video-text">
+    <p class="con4__tags">#탈장 #탈장수술 #외과수술 #로봇수술
+    </p>
+    <h3><span>탈장수술 1,000례 돌파!</span><span>로봇수술로 흉터·통증 걱정 끝 📍관악구 종합병원</span>
+    </h3>
+    <p class="con4__channel">에이치플러스양지병원
+    </p>
+    </div></a>
+    <div class="con4__list-line" aria-hidden="true"><img src="images/con4/list-line-03.svg" alt=""/>
+    </div>
+    </li>
+    <li><a class="con4__video" href="https://www.youtube.com/results?search_query=%EC%97%90%EC%9D%B4%EC%B9%98%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EC%96%91%EC%A7%80%EB%B3%91%EC%9B%90%20%EC%9D%B4%20%EC%8B%A0%ED%98%B8%20%EB%B3%B4%EC%9D%B4%EB%A9%B4%20%EC%A6%89%EC%8B%9C%20%E2%80%98119%20%EC%8B%A0%EA%B3%A0%E2%80%99%E2%80%A6%20%EB%87%8C%EC%A1%B8%EC%A4%91%20%EC%9D%98%EC%8B%AC%20%EC%A6%9D%EC%83%81%20%E2%80%98FAST%E2%80%99%20%F0%9F%93%8D%EA%B4%80%EC%95%85%EA%B5%AC%20%EC%A2%85%ED%95%A9%EB%B3%91%EC%9B%90" target="_blank" rel="noopener noreferrer" aria-label="이 신호 보이면 즉시 ‘119 신고’… 뇌졸중 의심 증상 ‘FAST’ 📍관악구 종합병원 유튜브에서 찾기 (새 창)"><picture class="con4__thumbnail-picture"><img class="con4__thumbnail" src="images/con4/video-04.png" alt="" loading="lazy"/></picture>
+    <div class="con4__video-text">
+    <p class="con4__tags">#뇌졸중 #뇌출혈 #뇌경색 #FAST #언어장애 #얼굴마비 #골든타임 #응급실 #119
+    </p>
+    <h3><span>이 신호 보이면 즉시 ‘119 신고’…</span><span>뇌졸중 의심 증상 ‘FAST’ 📍관악구 종합병원</span>
+    </h3>
+    <p class="con4__channel">에이치플러스양지병원
+    </p>
+    </div></a>
+    <div class="con4__list-line" aria-hidden="true"><img src="images/con4/list-line-03.svg" alt=""/>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="con4__logo" aria-hidden="true"><img class="con4__logo-plus" src="images/con4/logo-plus.svg" alt=""/><img class="con4__logo-square" src="images/con4/logo-square.svg" alt=""/><img class="con4__logo-h" src="images/con4/logo-h.svg" alt=""/>
+    </div>
+    </section>
+    <section class="con5" aria-labelledby="con5-title">
+    <header class="con5__heading">
+    <p>H   P L U S   Y A N G  J I   H O S P I T A L  N E W S
+    </p>
+    <h2 id="con5-title">양지병원 <strong>NEWS</strong>
+    </h2>
+    </header>
+    <ul class="con5__cards">
+    <li><button class="con5__card" type="button" aria-haspopup="dialog" aria-controls="con5-news-dialog"><span class="con5__image con5__image--pneumococcal"><img src="images/con5/news-01.png?v=2" alt="" loading="lazy"/></span><span class="con5__caption"><strong>독감 예방 접종</strong> 그리고<br/><strong>폐렴 구균</strong>도 함께 예방해요!</span><span class="con5__mobile-summary">독감 예방접종을 받으러 오셨다면 폐렴구균 접종 이력도 함께 확인해보세요. 연령·기저질환·과거 접종 여부에 따라 필요한 백신과 일정이 달라지므로 의료진 상담을 안내합니다.</span><span class="con5__mobile-more">더보기 +</span></button>
+    </li>
+    <li><button class="con5__card" type="button" aria-haspopup="dialog" aria-controls="con5-news-dialog"><span class="con5__image con5__image--checkup"><img src="images/con5/news-02.png?v=2" alt="" loading="lazy"/></span><span class="con5__caption"><strong>[ 10월 ]</strong> ‘가을힐링’ 검진 이벤트</span><span class="con5__mobile-summary">10월 한 달간 기본검사와 선택검사 3종으로 구성된 가을힐링 검진 이벤트를 진행합니다. 오후 검진 또는 2인 이상 검진 할인과 추가 정밀검사 옵션을 함께 안내합니다.</span><span class="con5__mobile-more">더보기 +</span></button>
+    </li>
+    <li><button class="con5__card" type="button" aria-haspopup="dialog" aria-controls="con5-news-dialog"><span class="con5__image con5__image--flu"><img src="images/con5/news-03.png?v=2" alt="" loading="lazy"/></span><span class="con5__caption"><strong>독감 예방</strong> 접종 안내</span><span class="con5__mobile-summary">2026–2027절기 독감 예방접종의 무료 대상과 대상별 접종 기간을 안내합니다. 방문 전 필요한 서류와 일반 성인 유료 접종, 다른 백신의 동시접종 정보도 확인할 수 있습니다.</span><span class="con5__mobile-more">더보기 +</span></button>
+    </li>
+    </ul><button class="con5__view-all" type="button" aria-haspopup="dialog" aria-controls="con5-news-dialog"><img class="con5__view-background" src="images/con1/view-all.svg" alt=""/><span class="con5__view-label">전체보기</span><img class="con5__view-circle" src="images/con1/view-plus.svg" alt=""/><img class="con5__view-circle con5__view-circle--hover" src="images/con1/view-plus-hover.svg" alt=""/><span class="con5__view-symbol" aria-hidden="true">+</span></button>
+    <dialog class="con5__dialog" id="con5-news-dialog" aria-labelledby="con5-dialog-title">
+    <div class="con5__dialog-heading">
+    <h2 id="con5-dialog-title">양지병원 NEWS 전체보기
+    </h2>
+    <form method="dialog"><button type="submit">닫기</button>
+    </form>
+    </div>
+    <ul class="con5__directory">
+    <li><button class="con5__directory-card" type="button"><span class="con5__directory-image"><img src="images/con5/news-01.png?v=2" alt="" loading="lazy"/></span><span class="con5__directory-text"><span class="con5__category">예방접종</span><span class="con5__directory-title">독감 예방 접종 그리고 폐렴 구균도 함께 예방해요!</span><span class="con5__directory-summary">독감 예방접종을 받으러 오셨다면 폐렴구균 접종 이력도 함께 확인해보세요. 연령·기저질환·과거 접종 여부에 따라 필요한 백신과 일정이 달라지므로 의료진 상담을 안내합니다.</span><span class="con5__directory-more">자세히 보기 →</span></span></button>
+    </li>
+    <li><button class="con5__directory-card" type="button"><span class="con5__directory-image"><img src="images/con5/news-02.png?v=2" alt="" loading="lazy"/></span><span class="con5__directory-text"><span class="con5__category">검진 이벤트</span><span class="con5__directory-title">[ 10월 ] ‘가을힐링’ 검진 이벤트</span><span class="con5__directory-summary">10월 한 달간 기본검사와 선택검사 3종으로 구성된 가을힐링 검진 이벤트를 진행합니다. 오후 검진 또는 2인 이상 검진 할인과 추가 정밀검사 옵션을 함께 안내합니다.</span><span class="con5__directory-more">자세히 보기 →</span></span></button>
+    </li>
+    <li><button class="con5__directory-card" type="button"><span class="con5__directory-image"><img src="images/con5/news-03.png?v=2" alt="" loading="lazy"/></span><span class="con5__directory-text"><span class="con5__category">예방접종</span><span class="con5__directory-title">독감 예방 접종 안내</span><span class="con5__directory-summary">2026–2027절기 독감 예방접종의 무료 대상과 대상별 접종 기간을 안내합니다. 방문 전 필요한 서류와 일반 성인 유료 접종, 다른 백신의 동시접종 정보도 확인할 수 있습니다.</span><span class="con5__directory-more">자세히 보기 →</span></span></button>
+    </li>
+    <li><button class="con5__directory-card" type="button"><span class="con5__directory-image"><img src="images/con5/news-vaccine-event.png" alt="" loading="lazy"/></span><span class="con5__directory-text"><span class="con5__category">예방접종 이벤트</span><span class="con5__directory-title">독감 동시 접종 EVENT</span><span class="con5__directory-summary">10월 1일부터 재고 소진 시까지 독감과 폐렴구균 또는 대상포진 백신의 동시접종 이벤트를 진행합니다. 국가검진을 함께 받는 경우의 접종 혜택과 비용을 안내합니다.</span><span class="con5__directory-more">자세히 보기 →</span></span></button>
+    </li>
+    <li><button class="con5__directory-card" type="button"><span class="con5__directory-image"><img src="images/con5/news-women-checkup.png" alt="" loading="lazy"/></span><span class="con5__directory-text"><span class="con5__category">검진 이벤트</span><span class="con5__directory-title">[ 10월 ] ‘여성정밀검진’ 이벤트</span><span class="con5__directory-summary">10월 한 달간 유방검진을 중심으로 기본·정밀·종합 여성검진 프로그램을 제공합니다. 국가검진 유방암 대상자를 위한 혜택과 갑상선·자궁 검사 등을 포함한 구성을 안내합니다.</span><span class="con5__directory-more">자세히 보기 →</span></span></button>
+    </li>
+    <li><button class="con5__directory-card" type="button"><span class="con5__directory-image"><img src="images/con5/news-orthopedics.png" alt="" loading="lazy"/></span><span class="con5__directory-text"><span class="con5__category">의료진 소식</span><span class="con5__directory-title">정형외과 유현열 전문의 초빙</span><span class="con5__directory-summary">정형외과 유현열 전문의가 2026년 10월 19일부터 진료를 시작합니다. 어깨·팔꿈치·손목 질환, 골절·외상, 인공관절·관절경 수술과 스포츠손상을 전문으로 진료합니다.</span><span class="con5__directory-more">자세히 보기 →</span></span></button>
+    </li>
+    </ul>
+    </dialog>
+    </section>
+    <section class="con6" aria-labelledby="con6-title">
+    <div class="con6__backdrop" aria-hidden="true"><img class="con6__hospital" src="images/con6/hospital.png" alt="" loading="lazy"/><img class="con6__overlay" src="images/con6/background-overlay.png" alt="" loading="lazy"/>
+    <div class="con6__canvas"><img class="con6__panel" src="images/con6/panel.svg" alt=""/><img class="con6__left" src="images/con6/panel-left.svg" alt=""/><img class="con6__left-overlay" src="images/con6/panel-left-overlay.svg" alt=""/><img class="con6__glow" src="images/con6/glow.svg" alt=""/><img class="con6__divider" src="images/con6/divider.svg" alt=""/><img class="con6__handle" src="images/con6/divider-handle.svg" alt=""/>
+    </div>
+    </div>
+    <div class="con6__mobile-graphic" aria-hidden="true"><img class="con6__mobile-divider" src="images/mobile/190ac.svg" alt=""/><img class="con6__mobile-divider-secondary" src="images/mobile/f0bab.svg" alt=""/><img class="con6__mobile-handle" src="images/mobile/2977a.svg" alt=""/><img class="con6__mobile-chart" src="images/mobile/f72c5.svg" alt=""/>
+    </div>
+    <div class="con6__content">
+    <div class="con6__logo"><picture><source media="(max-width: 600px)" srcSet="images/mobile/6aa68.svg"/><img src="images/con6/logo.svg" alt=""/></picture>
+    </div>
+    <p class="con6__slogan">앞선 의학, 따뜻한 마음
+    </p>
+    <h2 id="con6-title"><span>H+</span>양지병원
+    </h2>
+    <p class="con6__description">정확한 진단과 세심한 진료로 건강한 일상을 함께합니다.
+    </p><button class="con6__button" type="button" aria-haspopup="dialog" aria-controls="con6-introduction"><img class="con6__button-background" src="images/con6/button-background.svg" alt=""/><span class="con6__button-label">병원 소개</span><img class="con6__button-circle" src="images/con6/button-circle.svg" alt=""/><img class="con6__button-circle con6__button-circle--hover" src="images/con6/button-circle-hover.svg" alt=""/><img class="con6__button-arrow" src="images/con6/button-arrow.svg" alt=""/></button>
+    </div>
+    <div class="con6__graphic" aria-hidden="true">
+    <div class="con6__graphic-canvas"><img class="con6__circle" src="images/con6/medical-circle.svg" alt=""/><img class="con6__chart" src="images/con6/medical-chart.svg" alt=""/><img class="con6__dot" src="images/con6/medical-dot.svg" alt=""/>
+    </div>
+    </div>
+    <dialog class="hero-dialog con6__dialog" id="con6-introduction" aria-labelledby="con6-dialog-title"><button class="con6__dialog-close" type="button" aria-label="병원 소개 닫기" autofocus="">×</button>
+    <h2 id="con6-dialog-title">H+양지병원
+    </h2>
+    <p class="con6__intro-lead">Hope · Humanity · Healing
+    </p>
+    <section class="con6__intro-section" aria-labelledby="con6-mission"><span class="con6__intro-label">Mission · 미션</span>
+    <h3 id="con6-mission">앞선 의학 · 따뜻한 마음
+    </h3>
+    <p>앞선 의학으로 환자와 세상에 희망을 주고, 인간존중의 따뜻한 마음으로 세상을 치유하고 보다 건강하게 한다.
+    </p>
+    </section>
+    <section class="con6__intro-section" aria-labelledby="con6-vision"><span class="con6__intro-label">Vision · 비전</span>
+    <h3 id="con6-vision">세상에 행복을 더하는 혁신
+    </h3>
+    <p>우리는 직원, 환자, 사회를 행복하게 하는 대한민국 최고의 혁신병원이 된다.
+    </p>
+    </section>
+    <section class="con6__intro-section" aria-labelledby="con6-values"><span class="con6__intro-label">Core Value · 핵심가치</span>
+    <h3 id="con6-values">Do the BEST
+    </h3>
+    <dl class="con6__values">
+    <div>
+    <dt>Dream
+    </dt>
+    <dd>직원 모두의 꿈이 이루어지는 병원
+    </dd>
+    </div>
+    <div>
+    <dt>Ownership
+    </dt>
+    <dd>직원 모두가 주인인 병원
+    </dd>
+    </div>
+    <div>
+    <dt>Think creative
+    </dt>
+    <dd>항상 창의적으로 혁신, 변화, 발전하는 병원
+    </dd>
+    </div>
+    <div>
+    <dt>Happiness
+    </dt>
+    <dd>직원, 고객, 사회 모두가 행복해지는 병원
+    </dd>
+    </div>
+    <div>
+    <dt>Enjoy &amp; Fun
+    </dt>
+    <dd>즐겁게 즐기면서 일하는 병원
+    </dd>
+    </div>
+    <div>
+    <dt>BEST
+    </dt>
+    <dd>누구에게나 최고로 인정받는 병원
+    </dd>
+    </div>
+    </dl>
+    </section>
+    <form method="dialog"><button type="submit">닫기</button>
+    </form>
+    </dialog>
+    </section>
+    <section class="con7" aria-labelledby="con7-title">
+    <header class="con7__heading">
+    <p>H+  I N T E R N A T I O N A L M E D I C A L
+    </p>
+    <h2 id="con7-title">서울효천<strong>의료재단</strong>
+    </h2>
+    </header>
+    <ul class="con7__institutions">
+    <li><button type="button" class="con7__card con7__card--research" aria-haspopup="dialog" aria-controls="con7-institution-dialog" aria-label="H+ 의생명연구원 소개 보기">
+    <div class="con7__card-heading">
+    <p>에이치플러스 메디컬 그룹
+    </p>
+    <h3>H+ 의생명연구원
+    </h3>
+    </div>
+    <div class="con7__photo"><picture><source media="(max-width: 600px)" srcSet="images/mobile/22628.png"/><img src="images/con7/research.png" alt="H+ 의생명연구원" loading="lazy"/></picture>
+    <div class="con7__tint" aria-hidden="true">
+    </div>
+    </div>
+    <div class="con7__foundation"><span class="con7__symbol"><picture><source media="(max-width: 600px)" srcSet="images/mobile/d3a78.svg"/><img src="images/con7/foundation-symbol.svg" alt=""/></picture></span>
+    <p>서울효천의료재단
+    </p>
+    </div></button>
+    </li>
+    <li><button type="button" class="con7__card con7__card--rehabilitation" aria-haspopup="dialog" aria-controls="con7-institution-dialog" aria-label="H+ 재활자립병원 소개 보기">
+    <div class="con7__card-heading">
+    <p>에이치플러스 메디컬 그룹
+    </p>
+    <h3>H+ 재활자립병원
+    </h3>
+    </div>
+    <div class="con7__photo"><picture><source media="(max-width: 600px)" srcSet="images/mobile/2e2c0.png"/><img src="images/con7/rehabilitation.png" alt="H+ 재활자립병원" loading="lazy"/></picture>
+    <div class="con7__tint" aria-hidden="true">
+    </div>
+    </div>
+    <div class="con7__foundation"><span class="con7__symbol"><picture><source media="(max-width: 600px)" srcSet="images/mobile/d3a78.svg"/><img src="images/con7/foundation-symbol.svg" alt=""/></picture></span>
+    <p>서울효천의료재단
+    </p>
+    </div></button>
+    </li>
+    <li><button type="button" class="con7__card con7__card--nursing" aria-haspopup="dialog" aria-controls="con7-institution-dialog" aria-label="강남구립 행복요양병원 소개 보기">
+    <div class="con7__card-heading">
+    <p>에이치플러스 메디컬 그룹
+    </p>
+    <h3>강남구립 행복요양병원
+    </h3>
+    </div>
+    <div class="con7__photo"><picture><source media="(max-width: 600px)" srcSet="images/mobile/8df25.png"/><img src="images/con7/nursing.png" alt="강남구립 행복요양병원" loading="lazy"/></picture>
+    <div class="con7__tint" aria-hidden="true">
+    </div>
+    </div>
+    <div class="con7__foundation"><span class="con7__symbol"><picture><source media="(max-width: 600px)" srcSet="images/mobile/d3a78.svg"/><img src="images/con7/foundation-symbol.svg" alt=""/></picture></span>
+    <p>서울효천의료재단
+    </p>
+    </div></button>
+    </li>
+    <li><button type="button" class="con7__card con7__card--hanoi" aria-haspopup="dialog" aria-controls="con7-institution-dialog" aria-label="H+ 메디컬센터 하노이 소개 보기">
+    <div class="con7__card-heading">
+    <p>에이치플러스 메디컬 그룹
+    </p>
+    <h3>H+ 메디컬센터 하노이
+    </h3>
+    </div>
+    <div class="con7__photo"><picture><source media="(max-width: 600px)" srcSet="images/mobile/725ba.png"/><img src="images/con7/hanoi.png" alt="H+ 메디컬센터 하노이" loading="lazy"/></picture>
+    <div class="con7__tint" aria-hidden="true">
+    </div>
+    </div>
+    <div class="con7__foundation"><span class="con7__symbol"><picture><source media="(max-width: 600px)" srcSet="images/mobile/d3a78.svg"/><img src="images/con7/foundation-symbol.svg" alt=""/></picture></span>
+    <p>서울효천의료재단
+    </p>
+    </div></button>
+    </li>
+    </ul>
+    <dialog class="con7__dialog" id="con7-institution-dialog" aria-labelledby="con7-dialog-title">
+    <div class="con7__dialog-heading"><span>H+ MEDICAL GROUP</span><button type="button" autofocus="" aria-label="기관 소개 창 닫기">×</button>
+    </div>
+    </dialog>
+    </section>
+    </main>
+    <footer id="footer" class="site-footer">
+    <p class="site-footer__mobile-title">에이치 플러스 양지병원
+    </p>
+    <ul class="site-footer__menus" aria-label="병원 이용 정보">
+    <li>이용약관
+    </li>
+    <li>개인정보취급방침
+    </li>
+    <li>환자의권리와의무
+    </li>
+    <li>CCTV 설치 · 운영지침
+    </li>
+    <li>채용정보
+    </li>
+    <li>비급여진료안내
+    </li>
+    <li>찾아오시는길
+    </li>
+    </ul>
+    <div class="site-footer__contact">
+    <p><strong>콜센터</strong> <a href="tel:18778875">1877 - 8875</a>
+    </p>
+    <p><strong>응급의료센터</strong> <a href="tel:07046659119">070 - 4665 - 9119</a>
+    </p>
+    </div>
+    <div class="site-footer__info">
+    <p>사업자등록증 : 873-82-00549　 대표자 : 김철수
+    </p>
+    <p>업체명 : (의)서울효천의료재단 에이치플러스 양지병원
+    </p>
+    <p>(우) 08779　서울시 관악구 남부순환로 1636
+    </p>
+    </div>
+    <div class="site-footer__brand">
+    <p>에이치 플러스 양지병원
+    </p><small>Copyright © H PLUS YANGJI HOSPITAL. All rights reserved.</small>
+    </div>
+    <div class="site-footer__symbol" role="img" aria-label="H+ 양지병원"><img class="site-footer__square" src="images/footer/logo-square.svg" alt=""/><img class="site-footer__h" src="images/footer/logo-h.svg" alt=""/><img class="site-footer__plus" src="images/footer/logo-plus.svg" alt=""/>
+    </div>
+    <div class="site-footer__mobile-logo" aria-label="양지병원"><img src="images/hero/logo-symbol.svg" alt=""/><img src="images/hero/logo-text.svg" alt="양지병원"/>
+    </div>
+    </footer>
+    <nav class="quick-menu" aria-label="빠른 서비스 메뉴"><button class="quick-menu__top" type="button" aria-label="페이지 맨 위로 이동"><img src="images/quick-menu/top.svg" alt=""/><span>TOP</span></button>
+    <div class="quick-menu__panel"><button class="quick-menu__item quick-menu__item--phone" type="button"><span class="quick-menu__icon" aria-hidden="true"><img src="images/quick-menu/phone.svg" alt=""/></span><span>전화번호</span></button><button class="quick-menu__item quick-menu__item--time" type="button"><span class="quick-menu__icon" aria-hidden="true"><img src="images/quick-menu/time.svg" alt=""/></span><span>진료시간</span></button><button class="quick-menu__item quick-menu__item--reservation" type="button"><span class="quick-menu__icon" aria-hidden="true"><img src="images/quick-menu/reservation.svg" alt=""/></span><span>예약조회</span></button><a class="quick-menu__item quick-menu__item--talk" href="https://pf.kakao.com/_pxijdM" target="_blank" rel="noopener noreferrer" aria-label="양지병원 공식 카카오톡 문의하기 (새 탭)"><span class="quick-menu__icon" aria-hidden="true"><img src="images/quick-menu/talk.svg" alt=""/></span><span>문의하기</span></a>
+    </div>
+    </nav>
+    <div class="mobile-help"><button class="mobile-help__trigger" type="button" aria-expanded="false" aria-controls="mobile-help-panel"><span aria-hidden="true">?</span>도움이 필요하세요?</button>
+    </div>
+    <dialog class="hero-service-dialog" aria-labelledby="_R_f_" aria-describedby="_R_fH1_"><button class="hero-service-dialog__close" type="button" autofocus="" aria-label="안내 창 닫기">×</button>
+    <header class="hero-service-dialog__header"><span class="hero-service-dialog__icon" aria-hidden="true"><img src="images/hero/reservation-hover.svg" alt=""/></span><span class="hero-service-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="_R_f_">진료예약
+    </h2>
+    <p id="_R_fH1_">편하신 방법으로 진료를 예약해 주세요.
+    </p>
+    </header>
+    <div class="hero-service-dialog__body">
+    <div class="hero-service-dialog__info">
+    <h3>전화 · 온라인 · 카카오톡 예약
+    </h3>
+    <p>진료과와 의료진을 확인한 뒤 예약해 주세요. 실시간 진료 가능 여부는 콜센터로 문의하실 수 있습니다.
+    </p>
+    </div>
+    <dl class="hero-service-dialog__details">
+    <div>
+    <dt>예약 콜센터
+    </dt>
+    <dd>1877-8875
+    </dd>
+    </div>
+    <div>
+    <dt>평일 상담
+    </dt>
+    <dd>08:30 ~ 17:30
+    </dd>
+    </div>
+    <div>
+    <dt>토요일 상담
+    </dt>
+    <dd>08:30 ~ 12:30
+    </dd>
+    </div>
+    <div>
+    <dt>점심시간
+    </dt>
+    <dd>12:30 ~ 13:30
+    </dd>
+    </div>
+    </dl>
+    <div class="hero-service-dialog__actions"><a class="hero-service-dialog__action hero-service-dialog__action--primary" href="https://va.exona.ai/fc4e349afa004ccdba36aa6060a79803" target="_blank" rel="noopener noreferrer">공식 온라인 예약 · 조회<span aria-hidden="true"> ↗</span></a><a class="hero-service-dialog__action" href="https://pf.kakao.com/_pxijdM" target="_blank" rel="noopener noreferrer">카카오톡으로 예약하기<span aria-hidden="true"> ↗</span></a><a class="hero-service-dialog__action" href="tel:18778875">전화 예약 1877-8875</a>
+    </div>
+    <p class="hero-service-dialog__note">온라인 예약 버튼은 양지병원 공식 예약 서비스로 연결됩니다.
+    </p>
+    </div>
+    <footer class="hero-service-dialog__footer">앞선 의학, 따뜻한 마음 · 에이치플러스 양지병원
+    </footer>
+    </dialog>
+    <dialog class="quick-dialog" aria-labelledby="quick-menu-dialog-title" aria-describedby="quick-menu-dialog-description"><button class="quick-dialog__close" type="button" aria-label="창 닫기" autofocus=""><span aria-hidden="true">×</span></button>
+    <header class="quick-dialog__header"><span class="quick-dialog__icon" aria-hidden="true"></span><span class="quick-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="quick-menu-dialog-title">
+    </h2>
+    <p id="quick-menu-dialog-description">
+    </p>
+    </header>
+    <div class="quick-dialog__body">
+    </div>
+    <footer class="quick-dialog__footer">앞선 의학, 따뜻한 마음 <strong>에이치플러스 양지병원</strong>
+    </footer>
+    </dialog>
+    </div>
+
+    <template id="departments-expanded">
+<section class="con1 con1--expanded" aria-labelledby="con1-title">
+    <header class="con1__heading">
+    <p>에이치플러스 양지병원의 진료과를 소개합니다.
+    </p>
+    <h2 id="con1-title">양지병원 <strong>진료과</strong>
+    </h2>
+    </header><button class="con1__view-all" type="button" aria-expanded="true" aria-controls="department-list mobile-department-list"><img class="con1__view-background" src="images/con1/view-all.svg" alt=""/><span class="con1__view-label">접기</span><img class="con1__view-circle" src="images/con1/view-plus.svg" alt=""/><img class="con1__view-circle con1__view-circle--hover" src="images/con1/view-plus-hover.svg" alt=""/><span class="con1__view-symbol" aria-hidden="true">−</span></button>
+    <div class="con1__mobile-content">
+    <div id="mobile-department-list" class="con1__mobile-grid"><button class="department-card" type="button" aria-label="일반내과 바로가기"><span class="department-card__name">일반내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-01.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-01-hover.png" alt=""/></span><span class="department-card__number">01 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="소화기내과 바로가기"><span class="department-card__name">소화기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-02.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-02-hover.png" alt=""/></span><span class="department-card__number">02 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="혈액종양내과 바로가기"><span class="department-card__name">혈액종양내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-03.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-03-hover.png" alt=""/></span><span class="department-card__number">03 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="순환기내과 바로가기"><span class="department-card__name">순환기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-04.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-04-hover.png" alt=""/></span><span class="department-card__number">04 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="내분비내과 바로가기"><span class="department-card__name">내분비내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-05.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-05-hover.png" alt=""/></span><span class="department-card__number">05 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신장내과 바로가기"><span class="department-card__name">신장내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-06.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-06-hover.png" alt=""/></span><span class="department-card__number">06 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="호흡기내과 바로가기"><span class="department-card__name">호흡기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-07.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-07-hover.png" alt=""/></span><span class="department-card__number">07 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="감염내과 바로가기"><span class="department-card__name">감염내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-08.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-08-hover.png" alt=""/></span><span class="department-card__number">08 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="유방갑상선외과 바로가기"><span class="department-card__name">유방
+갑상선외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-09.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-09-hover.png" alt=""/></span><span class="department-card__number">09 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="외과 바로가기"><span class="department-card__name">외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-10.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-10-hover.png" alt=""/></span><span class="department-card__number">10 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="정형외과 바로가기"><span class="department-card__name">정형외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-11.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-11-hover.png" alt=""/></span><span class="department-card__number">11 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신경외과 바로가기"><span class="department-card__name">신경외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-12.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-12-hover.png" alt=""/></span><span class="department-card__number">12 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신경과 바로가기"><span class="department-card__name">신경과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-13.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-13-hover.png" alt=""/></span><span class="department-card__number">13 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="재활의학과 바로가기"><span class="department-card__name">재활의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-14.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-14-hover.png" alt=""/></span><span class="department-card__number">14 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="산부인과 바로가기"><span class="department-card__name">산부인과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-15.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-15-hover.png" alt=""/></span><span class="department-card__number">15 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="비뇨기과 바로가기"><span class="department-card__name">비뇨기과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-16.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-16-hover.png" alt=""/></span><span class="department-card__number">16 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="심장혈관흉부외과 바로가기"><span class="department-card__name">심장혈관
+흉부외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-17.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-17-hover.png" alt=""/></span><span class="department-card__number">17 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="성형외과 바로가기"><span class="department-card__name">성형외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-18.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-18-hover.png" alt=""/></span><span class="department-card__number">18 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="소아청소년과 바로가기"><span class="department-card__name">소아청소년과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-19.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-19-hover.png" alt=""/></span><span class="department-card__number">19 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="이비인후과 바로가기"><span class="department-card__name">이비인후과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-20.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-20-hover.png" alt=""/></span><span class="department-card__number">20 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="정신건강의학과 바로가기"><span class="department-card__name">정신
+건강의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-21.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-21-hover.png" alt=""/></span><span class="department-card__number">21 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="가정의학과 바로가기"><span class="department-card__name">가정의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-22.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-22-hover.png" alt=""/></span><span class="department-card__number">22 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="영상의학과 바로가기"><span class="department-card__name">영상의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-23.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-23-hover.png" alt=""/></span><span class="department-card__number">23 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="응급의학과 바로가기"><span class="department-card__name">응급의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-24.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-24-hover.png" alt=""/></span><span class="department-card__number">24 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="진단검사의학과 바로가기"><span class="department-card__name">진단
+검사의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-25.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-25-hover.png" alt=""/></span><span class="department-card__number">25 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="명리과 바로가기"><span class="department-card__name">명리과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-26.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-26-hover.png" alt=""/></span><span class="department-card__number">26 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="마취통증의학과 바로가기"><span class="department-card__name">마취
+통증의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-27.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-27-hover.png" alt=""/></span><span class="department-card__number">27 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="직업환경의학과 바로가기"><span class="department-card__name">직업
+환경의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-28.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-28-hover.png" alt=""/></span><span class="department-card__number">28 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="중환자의학과 바로가기"><span class="department-card__name">중환자의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-29.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-29-hover.png" alt=""/></span><span class="department-card__number">29 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="치과(구강검진) 바로가기"><span class="department-card__name">치과
+(구강검진)</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-30.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-30-hover.png" alt=""/></span><span class="department-card__number">30 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="의생명연구원 바로가기"><span class="department-card__name">의생명연구원</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-31.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-31-hover.png" alt=""/></span><span class="department-card__number">31 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="건강증진센터 바로가기"><span class="department-card__name">건강증진센터</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-32.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-32-hover.png" alt=""/></span><span class="department-card__number">32 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    </div>
+    <div id="department-list" class="con1__all-grid"><button class="department-card" type="button" aria-label="일반내과 바로가기"><span class="department-card__name">일반내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-01.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-01-hover.png" alt=""/></span><span class="department-card__number">01 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="소화기내과 바로가기"><span class="department-card__name">소화기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-02.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-02-hover.png" alt=""/></span><span class="department-card__number">02 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="혈액종양내과 바로가기"><span class="department-card__name">혈액종양내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-03.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-03-hover.png" alt=""/></span><span class="department-card__number">03 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="순환기내과 바로가기"><span class="department-card__name">순환기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-04.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-04-hover.png" alt=""/></span><span class="department-card__number">04 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="내분비내과 바로가기"><span class="department-card__name">내분비내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-05.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-05-hover.png" alt=""/></span><span class="department-card__number">05 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신장내과 바로가기"><span class="department-card__name">신장내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-06.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-06-hover.png" alt=""/></span><span class="department-card__number">06 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="호흡기내과 바로가기"><span class="department-card__name">호흡기내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-07.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-07-hover.png" alt=""/></span><span class="department-card__number">07 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="감염내과 바로가기"><span class="department-card__name">감염내과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-08.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-08-hover.png" alt=""/></span><span class="department-card__number">08 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="유방갑상선외과 바로가기"><span class="department-card__name">유방
+갑상선외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-09.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-09-hover.png" alt=""/></span><span class="department-card__number">09 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="외과 바로가기"><span class="department-card__name">외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-10.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-10-hover.png" alt=""/></span><span class="department-card__number">10 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="정형외과 바로가기"><span class="department-card__name">정형외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-11.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-11-hover.png" alt=""/></span><span class="department-card__number">11 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신경외과 바로가기"><span class="department-card__name">신경외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-12.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-12-hover.png" alt=""/></span><span class="department-card__number">12 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="신경과 바로가기"><span class="department-card__name">신경과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-13.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-13-hover.png" alt=""/></span><span class="department-card__number">13 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="재활의학과 바로가기"><span class="department-card__name">재활의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-14.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-14-hover.png" alt=""/></span><span class="department-card__number">14 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="산부인과 바로가기"><span class="department-card__name">산부인과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-15.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-15-hover.png" alt=""/></span><span class="department-card__number">15 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="비뇨기과 바로가기"><span class="department-card__name">비뇨기과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-16.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-16-hover.png" alt=""/></span><span class="department-card__number">16 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="심장혈관흉부외과 바로가기"><span class="department-card__name">심장혈관
+흉부외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-17.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-17-hover.png" alt=""/></span><span class="department-card__number">17 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="성형외과 바로가기"><span class="department-card__name">성형외과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-18.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-18-hover.png" alt=""/></span><span class="department-card__number">18 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="소아청소년과 바로가기"><span class="department-card__name">소아청소년과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-19.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-19-hover.png" alt=""/></span><span class="department-card__number">19 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="이비인후과 바로가기"><span class="department-card__name">이비인후과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-20.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-20-hover.png" alt=""/></span><span class="department-card__number">20 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="정신건강의학과 바로가기"><span class="department-card__name">정신
+건강의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-21.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-21-hover.png" alt=""/></span><span class="department-card__number">21 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="가정의학과 바로가기"><span class="department-card__name">가정의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-22.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-22-hover.png" alt=""/></span><span class="department-card__number">22 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="영상의학과 바로가기"><span class="department-card__name">영상의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-23.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-23-hover.png" alt=""/></span><span class="department-card__number">23 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="응급의학과 바로가기"><span class="department-card__name">응급의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-24.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-24-hover.png" alt=""/></span><span class="department-card__number">24 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="진단검사의학과 바로가기"><span class="department-card__name">진단
+검사의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-25.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-25-hover.png" alt=""/></span><span class="department-card__number">25 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card" type="button" aria-label="명리과 바로가기"><span class="department-card__name">명리과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-26.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-26-hover.png" alt=""/></span><span class="department-card__number">26 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="마취통증의학과 바로가기"><span class="department-card__name">마취
+통증의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-27.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-27-hover.png" alt=""/></span><span class="department-card__number">27 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="직업환경의학과 바로가기"><span class="department-card__name">직업
+환경의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-28.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-28-hover.png" alt=""/></span><span class="department-card__number">28 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="중환자의학과 바로가기"><span class="department-card__name">중환자의학과</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-29.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-29-hover.png" alt=""/></span><span class="department-card__number">29 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="치과(구강검진) 바로가기"><span class="department-card__name">치과
+(구강검진)</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-30.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-30-hover.png" alt=""/></span><span class="department-card__number">30 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="의생명연구원 바로가기"><span class="department-card__name">의생명연구원</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-31.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-31-hover.png" alt=""/></span><span class="department-card__number">31 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button><button class="department-card department-card--long-name" type="button" aria-label="건강증진센터 바로가기"><span class="department-card__name">건강증진센터</span><span class="department-card__icons" aria-hidden="true"><img class="department-card__icon department-card__icon--default" src="images/con1/department-32.png" alt=""/><img class="department-card__icon department-card__icon--hover" src="images/con1/department-32-hover.png" alt=""/></span><span class="department-card__number">32 / 32</span><span class="department-card__footer"><span>바로가기 +</span></span></button>
+    </div>
+    <dialog class="con1__dialog" aria-labelledby="department-dialog-title">
+    <h3 id="department-dialog-title">
+    </h3>
+    <p>진료과 상세 안내는 준비 중입니다.
+    </p>
+    <form method="dialog"><button autofocus="">확인</button>
+    </form>
+    </dialog>
+    </section>
+</template>
+
+    <template id="center-0">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-1" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>H+소화기병원
+    </h3>
+    <p>H+양지병원 부속 H+소화기병원은
+소화기 질환 특화 병원입니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">역류성 식도염, 위염, 위궤양/십이지장궤양, 위암, 대장암, 대장용종, 간염, 간경변증, 간암, 과민성 대장염,
+당낭염, 담석, 담낭용종, 췌장염, 췌장암
+치료내시경으로 조기암(위 · 대장), 용종 등 수술 없이 당일 치료 가능
+
+국내 치료내시경 분야의 최고 의료수준 보유 : 내시경점막절제술(EMR), 내시경점막하박리술(ESD),
+내시경적역행담췌관조영술(ERCP), 초음파내시경(EUS) 등
+
+복부응급환자 24시간 응급 시술/수술 시스템</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><span class="con2__position con2__position--first" aria-live="polite"><strong>1</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo con2__photo--digestive"><img src="images/con2/center-01.png" alt="H+소화기병원 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">H+소화기병원
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-01.png" alt="H+소화기병원 의료 현장"/>
+    <p>H+양지병원 부속 H+소화기병원은
+소화기 질환 특화 병원입니다.
+    </p>
+    <div><span>진료 분야
+</span><span>
+</span><span>역류성 식도염, 위염, 위궤양/십이지장궤양, 위암, 대장암, 대장용종, 간염, 간경변증, 간암, 과민성 대장염,
+당낭염, 담석, 담낭용종, 췌장염, 췌장암
+치료내시경으로 조기암(위 · 대장), 용종 등 수술 없이 당일 치료 가능
+
+국내 치료내시경 분야의 최고 의료수준 보유 : 내시경점막절제술(EMR), 내시경점막하박리술(ESD),
+내시경적역행담췌관조영술(ERCP), 초음파내시경(EUS) 등
+
+복부응급환자 24시간 응급 시술/수술 시스템</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-1">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-2" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:36">
+    <div class="con2__intro">
+    <h3>H＋ 국제병원
+(H PLUS Yangji International Hospital)
+    </h3>
+    <p>H＋양지병원 부속 ‘H＋국제병원’은 국내/외에 거주하고 있는 외국인 환자분들을 위한 특화 병원입니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">보건복지부 ‘외국인환자 유치 의료기관’ 인증 획득
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">에이치플러스 양지병원은 보건복지부의 엄격한 외국인환자 진료 시스템 및 환자 안전 관리 기준을 통과하여 &#x27;외국인환자 유치의료기관&#x27; 인증을 획득하였으며, 이를 통해 글로벌 수준의 국제의료 역량을 입증했습니다.
+ 본원은 다국어 소통 지원 및 국제환자를 전담하는 H+국제병원의 성공적인 운영으로 외국인 환자에게 최적화된 맞춤형 진료 서비스를 제공하고 있으며, 앞으로도 국제 표준에 부합하는 안전한 진료 환경을 바탕으로 세계인이 신뢰하는 글로벌 의료 서비스를 선보이도록 노력하겠습니다.</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>2</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-02.png" alt="H+국제병원 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">H+국제병원
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-02.png" alt="H+국제병원 의료 현장"/>
+    <p>H＋양지병원 부속 ‘H＋국제병원’은 국내/외에 거주하고 있는 외국인 환자분들을 위한 특화 병원입니다.
+    </p>
+    <div><span>보건복지부 ‘외국인환자 유치 의료기관’ 인증 획득
+</span><span>
+</span><span>에이치플러스 양지병원은 보건복지부의 엄격한 외국인환자 진료 시스템 및 환자 안전 관리 기준을 통과하여 &#x27;외국인환자 유치의료기관&#x27; 인증을 획득하였으며, 이를 통해 글로벌 수준의 국제의료 역량을 입증했습니다.
+ 본원은 다국어 소통 지원 및 국제환자를 전담하는 H+국제병원의 성공적인 운영으로 외국인 환자에게 최적화된 맞춤형 진료 서비스를 제공하고 있으며, 앞으로도 국제 표준에 부합하는 안전한 진료 환경을 바탕으로 세계인이 신뢰하는 글로벌 의료 서비스를 선보이도록 노력하겠습니다.</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-2">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-3" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>심장혈관만성센터
+    </h3>
+    <p>급성 심근 경색, 협심증 등의 급성 질환과 고혈압, 심장판막증, 심부전 등의 만성 질환을 담당하는 센터
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">순환기내과</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">
+고혈압 클리닉, 흉통 클리닉, 심장판막증, 심부전 클리닉 등을 운영하며 심전도, 심장초음파(경흉부,경식도), 심혈관조영실 등을 비롯한 운동 부하검사, 24시간 생활 심전도 24시간 생활 혈압측정 등을 시행합니다. 심혈관 조영장치(Angiography)를 이용한 관상동맥중재술 도중 병변이 있는 관상동맥 내부를 정확하게 볼 수 있는 혈관 내 초음파(IVUS) 시행으로 혈관 병변 상태 및 종류와 협착 정도와 길이를 정확히 파악할 수 있습니다.
+
+
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">중환자의학과
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">5인의 중환자의학과 전문의 배치로 24시간, 365일 중환자실, 병동 등에서 발생할 수 있는 급성악화환자의 진료를 위해 준비하고 있습니다. 여러 원인으로 인해 절박한 상태에 있는 환자분들께 표준적인 집중 치료를 제공하고 있습니다.</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>3</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-03.png" alt="심장혈관만성센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">심장혈관만성센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-03.png" alt="심장혈관만성센터 의료 현장"/>
+    <p>급성 심근 경색, 협심증 등의 급성 질환과 고혈압, 심장판막증, 심부전 등의 만성 질환을 담당하는 센터
+    </p>
+    <div><span>진료 분야
+</span><span>
+</span><span>순환기내과</span><span>
+고혈압 클리닉, 흉통 클리닉, 심장판막증, 심부전 클리닉 등을 운영하며 심전도, 심장초음파(경흉부,경식도), 심혈관조영실 등을 비롯한 운동 부하검사, 24시간 생활 심전도 24시간 생활 혈압측정 등을 시행합니다. 심혈관 조영장치(Angiography)를 이용한 관상동맥중재술 도중 병변이 있는 관상동맥 내부를 정확하게 볼 수 있는 혈관 내 초음파(IVUS) 시행으로 혈관 병변 상태 및 종류와 협착 정도와 길이를 정확히 파악할 수 있습니다.
+
+
+</span><span>중환자의학과
+</span><span>5인의 중환자의학과 전문의 배치로 24시간, 365일 중환자실, 병동 등에서 발생할 수 있는 급성악화환자의 진료를 위해 준비하고 있습니다. 여러 원인으로 인해 절박한 상태에 있는 환자분들께 표준적인 집중 치료를 제공하고 있습니다.</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-3">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-4" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>척추관절센터
+    </h3>
+    <p>척추관절센터는 최소침습 수술, 최소절개 인공관절 수술, 관절 내시경,
+체외충격파 치료법(ESWT) 등을 시행
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:600;--segment-color:#737373">신경외과</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">
+허리 · 목디스크(추간판 탈출증), 척추측만증, 척추관협착증, 최소침습 현미경 척추수술, 레이저디스크수술(당일퇴원), 척추 압박골절, 두경부외상, 척추종양, 뇌출혈 및 뇌손상 치료
+
+</span><span style="--segment-size:16;--segment-weight:600;--segment-color:#737373">정형외과</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">
+관절염, 인공관절 및 관절내시경수술, 골절의 진단과 치료, 탈구, 인대손상, 각종 외상 및 근골격계 질환
+
+</span><span style="--segment-size:16;--segment-weight:600;--segment-color:#737373">마취통증의학과
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">일반마취, 부위마취, 정맥마취, 통증치료
+
+</span><span style="--segment-size:16;--segment-weight:600;--segment-color:#737373">재활의학과</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>4</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-04.png" alt="척추관절센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">척추관절센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-04.png" alt="척추관절센터 의료 현장"/>
+    <p>척추관절센터는 최소침습 수술, 최소절개 인공관절 수술, 관절 내시경,
+체외충격파 치료법(ESWT) 등을 시행
+    </p>
+    <div><span>진료 분야
+</span><span>
+</span><span>신경외과</span><span>
+허리 · 목디스크(추간판 탈출증), 척추측만증, 척추관협착증, 최소침습 현미경 척추수술, 레이저디스크수술(당일퇴원), 척추 압박골절, 두경부외상, 척추종양, 뇌출혈 및 뇌손상 치료
+
+</span><span>정형외과</span><span>
+관절염, 인공관절 및 관절내시경수술, 골절의 진단과 치료, 탈구, 인대손상, 각종 외상 및 근골격계 질환
+
+</span><span>마취통증의학과
+</span><span>일반마취, 부위마취, 정맥마취, 통증치료
+
+</span><span>재활의학과</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-4">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-5" tabindex="0">
+    <div class="con2__information" style="--center-gap:50;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>뇌신경 센터
+    </h3>
+    <p>국내 뇌신경 중재 치료 권위자인 영상의학과 이웅재 전문의가 고난이도 시술을 수행하고 있으며, 뇌MRI 상 우연히 발견되는 머리 속의 시한 폭탄이라 알려진
+뇌동맥류를 안전하게 잘 치료하는 것으로 알려져 있습니다.
+
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">뇌질환
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">뇌혈관 중재술, 뇌졸중, 신경차단술, 어지럼증, 간질, 운동질환, 말초신경질환, 파킨슨병, 치매, 두통 등
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484">
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">정신질환 </span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484">
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">우울/조울증, 공황/불안장애, 조현병, 불면증, 치매, 화병
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484">
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">재활치료
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">뇌신경재활, 통증, 암재활</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>5</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-05.png" alt="뇌신경센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">뇌신경센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-05.png" alt="뇌신경센터 의료 현장"/>
+    <p>국내 뇌신경 중재 치료 권위자인 영상의학과 이웅재 전문의가 고난이도 시술을 수행하고 있으며, 뇌MRI 상 우연히 발견되는 머리 속의 시한 폭탄이라 알려진
+뇌동맥류를 안전하게 잘 치료하는 것으로 알려져 있습니다.
+
+    </p>
+    <div><span>진료 분야
+</span><span>
+</span><span>뇌질환
+</span><span>뇌혈관 중재술, 뇌졸중, 신경차단술, 어지럼증, 간질, 운동질환, 말초신경질환, 파킨슨병, 치매, 두통 등
+</span><span>
+</span><span>정신질환 </span><span>
+</span><span>우울/조울증, 공황/불안장애, 조현병, 불면증, 치매, 화병
+</span><span>
+</span><span>재활치료
+</span><span>뇌신경재활, 통증, 암재활</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-5">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-6" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>로봇수술센터
+    </h3>
+    <p>에이치플러스 양지병원 로봇수술센터는 세계적으로 인정 받는 다빈치 로봇 수술 시스템(Da Vinci Surgical System)을 도입하여, 고난이도 수술을 더욱 정밀하고 안전하게 시행하고 있습니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">로봇수술 적용 분야
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">비만외과</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">고도비만/비만대사질환 (위소매절제술, 루와이위우회술)
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">외과</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> :</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484"> 담낭/탈장/위장관질환 (담낭절제술, 탈장수술, 위암, 대장암, 간암)
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">비뇨의학과</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">전립선/신장질환 (전립선암, 전립선비대증, 신장수술)
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">산부인과 </span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484">: </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">부인과질환 (자궁절제술, 자궁근종절제술, 난소낭종/종양 절제술, 부인과 악성 질환)</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>6</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-06.png" alt="로봇수술센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">로봇수술센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-06.png" alt="로봇수술센터 의료 현장"/>
+    <p>에이치플러스 양지병원 로봇수술센터는 세계적으로 인정 받는 다빈치 로봇 수술 시스템(Da Vinci Surgical System)을 도입하여, 고난이도 수술을 더욱 정밀하고 안전하게 시행하고 있습니다.
+    </p>
+    <div><span>로봇수술 적용 분야
+</span><span>
+</span><span>비만외과</span><span> : </span><span>고도비만/비만대사질환 (위소매절제술, 루와이위우회술)
+</span><span>외과</span><span> :</span><span> 담낭/탈장/위장관질환 (담낭절제술, 탈장수술, 위암, 대장암, 간암)
+</span><span>비뇨의학과</span><span> : </span><span>전립선/신장질환 (전립선암, 전립선비대증, 신장수술)
+</span><span>산부인과 </span><span>: </span><span>부인과질환 (자궁절제술, 자궁근종절제술, 난소낭종/종양 절제술, 부인과 악성 질환)</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-6">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-7" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>어지럼증센터
+    </h3>
+    <p>에이치플러스 양지병원 어지럼증 센터는 신경과를 중심으로 신경외과, 순환기 내과, 영상의학과, 응급의학과, 이비인후과, 재활의학과 등 어지럼증이 발생할 수 있는 다양한 질환에 대한 다학제적 접근을 특징으로 합니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">중추성 어지럼증</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">뇌졸중(뇌경색, 일과성 허혈발작, 뇌출혈), 뇌종양, 퇴행성 뇌질환 등
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">말초성 어지럼증</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> :</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484"> 귀 질환, 전정신경 질환 등
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">균형장애</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">소뇌, 뇌간, 앞쪽 뇌, 기저핵 등 뇌 특정 영역의 신경 퇴행성 질환
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">현훈</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> :</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484"> 말초 혹은 중추성 전정 질환
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">실신성 어지럼증</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">저혈당, 기립성저혈압, 부정맥, 울혈성 심부전, 혈관성 미주신경 발작
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">심인성 어지럼증</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">공황장애, 광장공포증, 불안장애, 우울증, 신체형 장애, 히스테리, 외상후 증후군 등
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">재활치료 </span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484">: </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">뇌신경재활, 통증, 암재활
+</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>7</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-07.png" alt="어지럼증센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">어지럼증센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-07.png" alt="어지럼증센터 의료 현장"/>
+    <p>에이치플러스 양지병원 어지럼증 센터는 신경과를 중심으로 신경외과, 순환기 내과, 영상의학과, 응급의학과, 이비인후과, 재활의학과 등 어지럼증이 발생할 수 있는 다양한 질환에 대한 다학제적 접근을 특징으로 합니다.
+    </p>
+    <div><span>진료 분야
+</span><span>
+</span><span>중추성 어지럼증</span><span> : </span><span>뇌졸중(뇌경색, 일과성 허혈발작, 뇌출혈), 뇌종양, 퇴행성 뇌질환 등
+</span><span>말초성 어지럼증</span><span> :</span><span> 귀 질환, 전정신경 질환 등
+</span><span>균형장애</span><span> : </span><span>소뇌, 뇌간, 앞쪽 뇌, 기저핵 등 뇌 특정 영역의 신경 퇴행성 질환
+</span><span>현훈</span><span> :</span><span> 말초 혹은 중추성 전정 질환
+</span><span>실신성 어지럼증</span><span> : </span><span>저혈당, 기립성저혈압, 부정맥, 울혈성 심부전, 혈관성 미주신경 발작
+</span><span>심인성 어지럼증</span><span> : </span><span>공황장애, 광장공포증, 불안장애, 우울증, 신체형 장애, 히스테리, 외상후 증후군 등
+</span><span>재활치료 </span><span>: </span><span>뇌신경재활, 통증, 암재활
+</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-7">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-8" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>암통합케어센터
+    </h3>
+    <p>10개팀 이상의 전문의 통합협진진료로 입체적인 환자 개별치료
+국내최초 정신건강의학과 전문의 심리치료 병행
+노인암다학제팀 구성으로 최선의 노인암치료 결정
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">원스톱 진단에서 치료까지!
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">암통합케어센터는 10개 팀 이상으로 구성된 대학병원 수준의 전문 의사 및 전문인이 암진료를 합니다. 암 진단부터 치료가 완료될 때까지, 다학제협진을 통해 환자 특성에 맞게 최신 맞춤 항암치료, 최소 침습 시술 및 수술, 정서적 지지치료, 암재활 프로그램, 통증 중재치료 및 말기 암 완화치료를 제공합니다.</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>8</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-08.png" alt="암통합케어센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">암통합케어센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-08.png" alt="암통합케어센터 의료 현장"/>
+    <p>10개팀 이상의 전문의 통합협진진료로 입체적인 환자 개별치료
+국내최초 정신건강의학과 전문의 심리치료 병행
+노인암다학제팀 구성으로 최선의 노인암치료 결정
+    </p>
+    <div><span>원스톱 진단에서 치료까지!
+</span><span>
+</span><span>암통합케어센터는 10개 팀 이상으로 구성된 대학병원 수준의 전문 의사 및 전문인이 암진료를 합니다. 암 진단부터 치료가 완료될 때까지, 다학제협진을 통해 환자 특성에 맞게 최신 맞춤 항암치료, 최소 침습 시술 및 수술, 정서적 지지치료, 암재활 프로그램, 통증 중재치료 및 말기 암 완화치료를 제공합니다.</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-8">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-9" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>비만당뇨수술센터
+    </h3>
+    <p>에이치플러스 양지병원 비만당뇨수술 센터(Metabolic &amp; Bariatric surgery center)에서는 고도비만 분야의 1인자인 前 순천향대학교 서울병원 김용진 교수를 초빙해 비만당뇨수술 센터를 개설했습니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+</span><span style="--segment-size:16;--segment-weight:400;--segment-color:#848484">고도비만, 대사수술, 상부위장관, 복강경수술
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484">
+</span><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">개인 맞춤형 수술의 선택적 시행!</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> </span><span style="--segment-size:16;--segment-weight:400;--segment-color:#848484">개인 특성, 비만도, 동반 질환 등을 고려한 다양한 수술법을 선택적으로 시행합니다. (위우회술, 위절제술, 십이지장 치환술 등)
+</span><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">
+풍부한 경험의 전문인력으로 구성된 비만당뇨수술 전담팀 배치!</span><span style="--segment-size:16;--segment-weight:400;--segment-color:#848484"> 전문의, 간호사, 임상 영양사로 구성된 비만당뇨수술 전담팀이 환자분의 성공적인 수술결과를 위해 수술 전,후 및 사후관리까지를 환자분과 함께합니다. 환자의 특성에 따라 치료의 효과가 가장 오래 지속될 수 있는 치료를 제공합니다.</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>9</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-09.png" alt="비만당뇨수술센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">비만당뇨수술센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-09.png" alt="비만당뇨수술센터 의료 현장"/>
+    <p>에이치플러스 양지병원 비만당뇨수술 센터(Metabolic &amp; Bariatric surgery center)에서는 고도비만 분야의 1인자인 前 순천향대학교 서울병원 김용진 교수를 초빙해 비만당뇨수술 센터를 개설했습니다.
+    </p>
+    <div><span>진료 분야
+</span><span>고도비만, 대사수술, 상부위장관, 복강경수술
+</span><span>
+</span><span>개인 맞춤형 수술의 선택적 시행!</span><span> </span><span>개인 특성, 비만도, 동반 질환 등을 고려한 다양한 수술법을 선택적으로 시행합니다. (위우회술, 위절제술, 십이지장 치환술 등)
+</span><span>
+풍부한 경험의 전문인력으로 구성된 비만당뇨수술 전담팀 배치!</span><span> 전문의, 간호사, 임상 영양사로 구성된 비만당뇨수술 전담팀이 환자분의 성공적인 수술결과를 위해 수술 전,후 및 사후관리까지를 환자분과 함께합니다. 환자의 특성에 따라 치료의 효과가 가장 오래 지속될 수 있는 치료를 제공합니다.</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-9">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-10" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>건강증진센터
+    </h3>
+    <p>현대인들의 불규칙한 식생활 습관, 스트레스, 운동부족 등으로 성인병과
+만성질환이 날로 증가하는 가운데, 건강증진센터에서는 빠르고 정확한 검진
+시스템과 대ㆍ내외 협진 시스템의 구축을 통해 진단에서 치료까지의 원스톱
+개인 맞춤 의료서비스를 제공하고 있습니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">검진프로그램
+</span><span style="--segment-size:20;--segment-weight:700;--segment-color:#737373">
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">종합건강검진 : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#737373">	</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">기본종합검진, 호흡기 정밀검진, 소화기 정밀검진, 여성 정밀검진, 예비부부 검진
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">일반건강검진	:</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#848484"> </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">국민건강보험법 및 시행령에 따른 건강검진으로 생애전환기검진, 영유아검진 포함
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">암검진	:</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484"> 위암, 대장암, 간암, 유방암, 자궁경부암 등 5대암 검진
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">채용검진 :	</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">공무원 채용, 일반 기업체 채용, 해외유학 및 기숙사 입사용 검진
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">기업검진 :</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">	기업에서 원하는 항목에 의한 맞춤형 단체검진, 개인이 원하는 항목을 특화한 검진 등 상담에 의한 맞춤형 개별 검진
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">해외동포 종합검진 : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">미국, 캐나다, 호주 등 해외거주 동포 및 중국, 러시아, 몽골 등 외국인검진</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>10</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-10.png" alt="건강증진센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">건강증진센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-10.png" alt="건강증진센터 의료 현장"/>
+    <p>현대인들의 불규칙한 식생활 습관, 스트레스, 운동부족 등으로 성인병과
+만성질환이 날로 증가하는 가운데, 건강증진센터에서는 빠르고 정확한 검진
+시스템과 대ㆍ내외 협진 시스템의 구축을 통해 진단에서 치료까지의 원스톱
+개인 맞춤 의료서비스를 제공하고 있습니다.
+    </p>
+    <div><span>검진프로그램
+</span><span>
+</span><span>종합건강검진 : </span><span>	</span><span>기본종합검진, 호흡기 정밀검진, 소화기 정밀검진, 여성 정밀검진, 예비부부 검진
+</span><span>일반건강검진	:</span><span> </span><span>국민건강보험법 및 시행령에 따른 건강검진으로 생애전환기검진, 영유아검진 포함
+</span><span>암검진	:</span><span> 위암, 대장암, 간암, 유방암, 자궁경부암 등 5대암 검진
+</span><span>채용검진 :	</span><span>공무원 채용, 일반 기업체 채용, 해외유학 및 기숙사 입사용 검진
+</span><span>기업검진 :</span><span>	기업에서 원하는 항목에 의한 맞춤형 단체검진, 개인이 원하는 항목을 특화한 검진 등 상담에 의한 맞춤형 개별 검진
+</span><span>해외동포 종합검진 : </span><span>미국, 캐나다, 호주 등 해외거주 동포 및 중국, 러시아, 몽골 등 외국인검진</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-10">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-11" tabindex="0">
+    <div class="con2__information" style="--center-gap:70;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>호흡기센터
+    </h3>
+    <p>호흡기센터는 호흡기에 발생할 수 있는 질환의 진료를 담당하고 있습니다.
+감염내과 하의 감염관리실 운영으로 감염질환 대처 시스템을 구축하고 있으며
+전 세계 최초로 워크스루 선별진료소를 개발 ∙ 운영하여 코로나19 확산 방지에 앞장섰습니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">이비인후과 : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">난청, 어지럼, 두경부종양, 코질환, 인공와우 전문
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">호흡기내과 : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">기도질환(천식, 만성폐쇄성질환, 호흡기감염증)
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">감염내과 : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">급성 부비동염, 뇌수막염, 장티푸스, 말라리아, 대상포진, 불명열, 감염성 질환
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">소아청소년과 : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">소아호흡기 / 소아알레르기 / 신생아 예방접종 / 영유아 검진 / 비염 / 아토피
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">영상의학과 : </span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">영상 판독(흉부) / 초음파(복부)</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>11</strong> / 12</span><button class="con2__counter-next" type="button" aria-label="다음 진료센터">+</button>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-11.png" alt="호흡기센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">호흡기센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-11.png" alt="호흡기센터 의료 현장"/>
+    <p>호흡기센터는 호흡기에 발생할 수 있는 질환의 진료를 담당하고 있습니다.
+감염내과 하의 감염관리실 운영으로 감염질환 대처 시스템을 구축하고 있으며
+전 세계 최초로 워크스루 선별진료소를 개발 ∙ 운영하여 코로나19 확산 방지에 앞장섰습니다.
+    </p>
+    <div><span>진료 분야
+
+</span><span>이비인후과 : </span><span>난청, 어지럼, 두경부종양, 코질환, 인공와우 전문
+</span><span>호흡기내과 : </span><span>기도질환(천식, 만성폐쇄성질환, 호흡기감염증)
+</span><span>감염내과 : </span><span>급성 부비동염, 뇌수막염, 장티푸스, 말라리아, 대상포진, 불명열, 감염성 질환
+</span><span>소아청소년과 : </span><span>소아호흡기 / 소아알레르기 / 신생아 예방접종 / 영유아 검진 / 비염 / 아토피
+</span><span>영상의학과 : </span><span>영상 판독(흉부) / 초음파(복부)</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="center-11">
+<article id="center-panel" class="con2__panel" role="tabpanel" aria-labelledby="center-tab-12" tabindex="0">
+    <div class="con2__information" style="--center-gap:30;--center-title-size:40">
+    <div class="con2__intro">
+    <h3>응급의료센터
+    </h3>
+    <p>응급의료센터는 보건복지부 지정 지역응급의료센터로 전문의 12인으로
+상시 대기하여 365일 신속하고 정확한 치료가 가능하며 대학병원과 원활한
+협력체계를 갖추어 중증질환 및 응급 상황에도 빠른 처치 및 신중한 진료로
+양질의 의료 서비스를 제공합니다.
+    </p>
+    </div>
+    <div class="con2__details"><span style="--segment-size:20;--segment-weight:700;--segment-color:#000000">진료 분야
+</span><span style="--segment-size:20;--segment-weight:500;--segment-color:#000000">
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">신경학적 응급증상
+
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">의식장애, 현훈, 급성의식장애, 급성신경학적 이상
+구토 · 의식장애 등의 증상이 있는 두부손상
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">
+심혈관계 응급증상
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">급성호흡곤란, 심장질환으로 인한 급성 흉통
+심계항진, 박동 이상 및 쇼크
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">
+응급증상
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">급성복막염, 자폐색증, 급성췌장염, 화상, 골절, 탈골
+</span><span style="--segment-size:16;--segment-weight:500;--segment-color:#737373">
+응급증상출혈
+</span><span style="--segment-size:16;--segment-weight:300;--segment-color:#848484">계속되는 각혈, 지혈이 안 되는 출혈, 급성 위장관 출혈</span>
+    </div>
+    <nav class="con2__counter" aria-label="진료센터 이동"><button class="con2__counter-previous" type="button" aria-label="이전 진료센터">−</button><span class="con2__position" aria-live="polite"><strong>12</strong> / 12</span>
+    </nav>
+    </div>
+    <div class="con2__photo"><img src="images/con2/center-12.png" alt="응급의료센터 의료 현장"/>
+    </div>
+    </article>
+<dialog class="con2__directory con2__mobile-detail" id="center-mobile-detail" aria-labelledby="center-mobile-title">
+    <header class="con2__directory-heading">
+    <h3 id="center-mobile-title">응급의료센터
+    </h3>
+    <form method="dialog"><button autofocus="">닫기</button>
+    </form>
+    </header><img src="images/con2/center-12.png" alt="응급의료센터 의료 현장"/>
+    <p>응급의료센터는 보건복지부 지정 지역응급의료센터로 전문의 12인으로
+상시 대기하여 365일 신속하고 정확한 치료가 가능하며 대학병원과 원활한
+협력체계를 갖추어 중증질환 및 응급 상황에도 빠른 처치 및 신중한 진료로
+양질의 의료 서비스를 제공합니다.
+    </p>
+    <div><span>진료 분야
+</span><span>
+</span><span>신경학적 응급증상
+
+</span><span>의식장애, 현훈, 급성의식장애, 급성신경학적 이상
+구토 · 의식장애 등의 증상이 있는 두부손상
+</span><span>
+심혈관계 응급증상
+</span><span>급성호흡곤란, 심장질환으로 인한 급성 흉통
+심계항진, 박동 이상 및 쇼크
+</span><span>
+응급증상
+</span><span>급성복막염, 자폐색증, 급성췌장염, 화상, 골절, 탈골
+</span><span>
+응급증상출혈
+</span><span>계속되는 각혈, 지혈이 안 되는 출혈, 급성 위장관 출혈</span>
+    </div>
+    </dialog>
+</template>
+
+    <template id="news-0">
+<dialog class="con5__dialog" id="con5-news-dialog" aria-labelledby="con5-dialog-title">
+    <div class="con5__dialog-heading">
+    <h2 id="con5-dialog-title">독감 예방 접종 그리고 폐렴 구균도 함께 예방해요!
+    </h2>
+    <form method="dialog"><button type="submit">닫기</button>
+    </form>
+    </div>
+    <div class="con5__dialog-news"><button class="con5__back" type="button">← 전체 소식으로</button>
+    <div class="con5__detail-layout"><img class="con5__detail-image" src="images/con5/news-01.png?v=2" alt="독감 예방 접종 그리고 폐렴 구균도 함께 예방해요!"/>
+    <div class="con5__detail-copy"><span class="con5__category">예방접종</span>
+    <h3>독감 예방 접종 그리고 폐렴 구균도 함께 예방해요!
+    </h3>
+    <p>독감 예방접종을 받으러 오셨다면 폐렴구균 접종 이력도 함께 확인해보세요. 연령·기저질환·과거 접종 여부에 따라 필요한 백신과 일정이 달라지므로 의료진 상담을 안내합니다.
+    </p><a class="con5__source" href="https://blog.naver.com/new_yjh/224435062920" target="_blank" rel="noopener noreferrer">공식 블로그에서 자세히 보기 ↗</a>
+    </div>
+    </div>
+    </div>
+    </dialog>
+</template>
+
+    <template id="news-1">
+<dialog class="con5__dialog" id="con5-news-dialog" aria-labelledby="con5-dialog-title">
+    <div class="con5__dialog-heading">
+    <h2 id="con5-dialog-title">[ 10월 ] ‘가을힐링’ 검진 이벤트
+    </h2>
+    <form method="dialog"><button type="submit">닫기</button>
+    </form>
+    </div>
+    <div class="con5__dialog-news"><button class="con5__back" type="button">← 전체 소식으로</button>
+    <div class="con5__detail-layout"><img class="con5__detail-image" src="images/con5/news-02.png?v=2" alt="[ 10월 ] ‘가을힐링’ 검진 이벤트"/>
+    <div class="con5__detail-copy"><span class="con5__category">검진 이벤트</span>
+    <h3>[ 10월 ] ‘가을힐링’ 검진 이벤트
+    </h3>
+    <p>10월 한 달간 기본검사와 선택검사 3종으로 구성된 가을힐링 검진 이벤트를 진행합니다. 오후 검진 또는 2인 이상 검진 할인과 추가 정밀검사 옵션을 함께 안내합니다.
+    </p><a class="con5__source" href="https://blog.naver.com/new_yjh/224420715468" target="_blank" rel="noopener noreferrer">공식 블로그에서 자세히 보기 ↗</a>
+    </div>
+    </div>
+    </div>
+    </dialog>
+</template>
+
+    <template id="news-2">
+<dialog class="con5__dialog" id="con5-news-dialog" aria-labelledby="con5-dialog-title">
+    <div class="con5__dialog-heading">
+    <h2 id="con5-dialog-title">독감 예방 접종 안내
+    </h2>
+    <form method="dialog"><button type="submit">닫기</button>
+    </form>
+    </div>
+    <div class="con5__dialog-news"><button class="con5__back" type="button">← 전체 소식으로</button>
+    <div class="con5__detail-layout"><img class="con5__detail-image" src="images/con5/news-03.png?v=2" alt="독감 예방 접종 안내"/>
+    <div class="con5__detail-copy"><span class="con5__category">예방접종</span>
+    <h3>독감 예방 접종 안내
+    </h3>
+    <p>2026–2027절기 독감 예방접종의 무료 대상과 대상별 접종 기간을 안내합니다. 방문 전 필요한 서류와 일반 성인 유료 접종, 다른 백신의 동시접종 정보도 확인할 수 있습니다.
+    </p><a class="con5__source" href="https://blog.naver.com/new_yjh/224424720094" target="_blank" rel="noopener noreferrer">공식 블로그에서 자세히 보기 ↗</a>
+    </div>
+    </div>
+    </div>
+    </dialog>
+</template>
+
+    <template id="news-3">
+<dialog class="con5__dialog" id="con5-news-dialog" aria-labelledby="con5-dialog-title">
+    <div class="con5__dialog-heading">
+    <h2 id="con5-dialog-title">독감 동시 접종 EVENT
+    </h2>
+    <form method="dialog"><button type="submit">닫기</button>
+    </form>
+    </div>
+    <div class="con5__dialog-news"><button class="con5__back" type="button">← 전체 소식으로</button>
+    <div class="con5__detail-layout"><img class="con5__detail-image" src="images/con5/news-vaccine-event.png" alt="독감 동시 접종 EVENT"/>
+    <div class="con5__detail-copy"><span class="con5__category">예방접종 이벤트</span>
+    <h3>독감 동시 접종 EVENT
+    </h3>
+    <p>10월 1일부터 재고 소진 시까지 독감과 폐렴구균 또는 대상포진 백신의 동시접종 이벤트를 진행합니다. 국가검진을 함께 받는 경우의 접종 혜택과 비용을 안내합니다.
+    </p><a class="con5__source" href="https://blog.naver.com/new_yjh/224420679221" target="_blank" rel="noopener noreferrer">공식 블로그에서 자세히 보기 ↗</a>
+    </div>
+    </div>
+    </div>
+    </dialog>
+</template>
+
+    <template id="news-4">
+<dialog class="con5__dialog" id="con5-news-dialog" aria-labelledby="con5-dialog-title">
+    <div class="con5__dialog-heading">
+    <h2 id="con5-dialog-title">[ 10월 ] ‘여성정밀검진’ 이벤트
+    </h2>
+    <form method="dialog"><button type="submit">닫기</button>
+    </form>
+    </div>
+    <div class="con5__dialog-news"><button class="con5__back" type="button">← 전체 소식으로</button>
+    <div class="con5__detail-layout"><img class="con5__detail-image" src="images/con5/news-women-checkup.png" alt="[ 10월 ] ‘여성정밀검진’ 이벤트"/>
+    <div class="con5__detail-copy"><span class="con5__category">검진 이벤트</span>
+    <h3>[ 10월 ] ‘여성정밀검진’ 이벤트
+    </h3>
+    <p>10월 한 달간 유방검진을 중심으로 기본·정밀·종합 여성검진 프로그램을 제공합니다. 국가검진 유방암 대상자를 위한 혜택과 갑상선·자궁 검사 등을 포함한 구성을 안내합니다.
+    </p><a class="con5__source" href="https://blog.naver.com/new_yjh/224420666976" target="_blank" rel="noopener noreferrer">공식 블로그에서 자세히 보기 ↗</a>
+    </div>
+    </div>
+    </div>
+    </dialog>
+</template>
+
+    <template id="news-5">
+<dialog class="con5__dialog" id="con5-news-dialog" aria-labelledby="con5-dialog-title">
+    <div class="con5__dialog-heading">
+    <h2 id="con5-dialog-title">정형외과 유현열 전문의 초빙
+    </h2>
+    <form method="dialog"><button type="submit">닫기</button>
+    </form>
+    </div>
+    <div class="con5__dialog-news"><button class="con5__back" type="button">← 전체 소식으로</button>
+    <div class="con5__detail-layout"><img class="con5__detail-image" src="images/con5/news-orthopedics.png" alt="정형외과 유현열 전문의 초빙"/>
+    <div class="con5__detail-copy"><span class="con5__category">의료진 소식</span>
+    <h3>정형외과 유현열 전문의 초빙
+    </h3>
+    <p>정형외과 유현열 전문의가 2026년 10월 19일부터 진료를 시작합니다. 어깨·팔꿈치·손목 질환, 골절·외상, 인공관절·관절경 수술과 스포츠손상을 전문으로 진료합니다.
+    </p><a class="con5__source" href="https://blog.naver.com/new_yjh/224433177841" target="_blank" rel="noopener noreferrer">공식 블로그에서 자세히 보기 ↗</a>
+    </div>
+    </div>
+    </div>
+    </dialog>
+</template>
+
+    <template id="institution-0">
+<dialog class="con7__dialog" id="con7-institution-dialog" aria-labelledby="con7-dialog-title">
+    <div class="con7__dialog-heading"><span>H+ MEDICAL GROUP</span><button type="button" autofocus="" aria-label="기관 소개 창 닫기">×</button>
+    </div>
+    <div class="con7__dialog-photo con7__card--research">
+    <div class="con7__photo"><img src="images/con7/research.png" alt="H+ 의생명연구원 전경"/>
+    </div>
+    </div>
+    <div class="con7__dialog-body"><span class="con7__category">의생명 연구 · 임상시험</span>
+    <h2 id="con7-dialog-title">H+ 의생명연구원
+    </h2>
+    <p class="con7__dialog-summary">2011년 임상연구센터로 시작해 2019년 의생명연구원으로 문을 열었습니다. 서울 관악구 신림동에서 임상시험과 의생명 연구를 수행하며, 비대학병원 최초로 기관생명윤리위원회(IRB) 평가·인증을 획득했습니다.
+    </p>
+    <dl class="con7__details">
+    <div>
+    <dt>주소
+    </dt>
+    <dd>서울시 관악구 남부순환로 186가길
+    </dd>
+    </div>
+    </dl><a class="con7__website" href="https://hyjhbri.com/" target="_blank" rel="noopener noreferrer">공식 홈페이지 보기 <span aria-hidden="true">↗</span></a><a class="con7__source" href="https://www.newyjh.com/foundation/foundation-010100.html" target="_blank" rel="noopener noreferrer">서울효천의료재단 소개 ↗</a>
+    </div>
+    </dialog>
+</template>
+
+    <template id="institution-1">
+<dialog class="con7__dialog" id="con7-institution-dialog" aria-labelledby="con7-dialog-title">
+    <div class="con7__dialog-heading"><span>H+ MEDICAL GROUP</span><button type="button" autofocus="" aria-label="기관 소개 창 닫기">×</button>
+    </div>
+    <div class="con7__dialog-photo con7__card--rehabilitation">
+    <div class="con7__photo"><img src="images/con7/rehabilitation.png" alt="H+ 재활자립병원 전경"/>
+    </div>
+    </div>
+    <div class="con7__dialog-body"><span class="con7__category">재활치료 · 일상 복귀</span>
+    <h2 id="con7-dialog-title">H+ 재활자립병원
+    </h2>
+    <p class="con7__dialog-summary">2019년 4월부터 서울효천의료재단이 운영하는 서울 구로구의 재활병원입니다. 121병상 규모로, 뇌졸중·척수손상·근육병·뇌성마비 등 재활치료가 필요한 환자들을 위한 진료를 제공합니다.
+    </p>
+    <dl class="con7__details">
+    <div>
+    <dt>주소
+    </dt>
+    <dd>서울 구로구 공원로6가길 4
+    </dd>
+    </div>
+    <div>
+    <dt>대표번호
+    </dt>
+    <dd><a href="tel:15772588">1577-2588</a>
+    </dd>
+    </div>
+    </dl><a class="con7__website" href="https://hplusrehab.com/" target="_blank" rel="noopener noreferrer">공식 홈페이지 보기 <span aria-hidden="true">↗</span></a><a class="con7__source" href="https://www.newyjh.com/foundation/foundation-010100.html" target="_blank" rel="noopener noreferrer">서울효천의료재단 소개 ↗</a>
+    </div>
+    </dialog>
+</template>
+
+    <template id="institution-2">
+<dialog class="con7__dialog" id="con7-institution-dialog" aria-labelledby="con7-dialog-title">
+    <div class="con7__dialog-heading"><span>H+ MEDICAL GROUP</span><button type="button" autofocus="" aria-label="기관 소개 창 닫기">×</button>
+    </div>
+    <div class="con7__dialog-photo con7__card--nursing">
+    <div class="con7__photo"><img src="images/con7/nursing.png" alt="강남구립 행복요양병원 전경"/>
+    </div>
+    </div>
+    <div class="con7__dialog-body"><span class="con7__category">요양 · 돌봄</span>
+    <h2 id="con7-dialog-title">강남구립 행복요양병원
+    </h2>
+    <p class="con7__dialog-summary">2025년 1월부터 서울효천의료재단이 수탁 운영하는 요양병원입니다. 서울 강남구 헌릉로에 위치하며, 307병상과 7층 건물 규모의 시설을 운영하고 있습니다.
+    </p>
+    <dl class="con7__details">
+    <div>
+    <dt>주소
+    </dt>
+    <dd>서울 강남구 헌릉로 590길 60
+    </dd>
+    </div>
+    <div>
+    <dt>대표번호
+    </dt>
+    <dd><a href="tel:0260532114">02-6053-2114</a>
+    </dd>
+    </div>
+    </dl><a class="con7__website" href="https://www.gangnamguhospital.kr/" target="_blank" rel="noopener noreferrer">공식 홈페이지 보기 <span aria-hidden="true">↗</span></a><a class="con7__source" href="https://www.newyjh.com/foundation/foundation-010100.html" target="_blank" rel="noopener noreferrer">서울효천의료재단 소개 ↗</a>
+    </div>
+    </dialog>
+</template>
+
+    <template id="institution-3">
+<dialog class="con7__dialog" id="con7-institution-dialog" aria-labelledby="con7-dialog-title">
+    <div class="con7__dialog-heading"><span>H+ MEDICAL GROUP</span><button type="button" autofocus="" aria-label="기관 소개 창 닫기">×</button>
+    </div>
+    <div class="con7__dialog-photo con7__card--hanoi">
+    <div class="con7__photo"><img src="images/con7/hanoi.png" alt="H+ 메디컬센터 하노이 전경"/>
+    </div>
+    </div>
+    <div class="con7__dialog-body"><span class="con7__category">국제의료 · 건강검진</span>
+    <h2 id="con7-dialog-title">H+ 국제의료센터
+    </h2>
+    <p class="con7__dialog-summary">2024년 12월 베트남 하노이 롯데몰에 개원한 재단의 첫 해외 의료기관입니다. 건강검진센터와 폴리클리닉을 운영하며, 국제다학제진료와 한국·베트남 원격진료시스템을 도입했습니다.
+    </p>
+    <dl class="con7__details">
+    <div>
+    <dt>주소
+    </dt>
+    <dd>베트남 하노이 서호 롯데몰 오피스 빌딩 7·8층
+    </dd>
+    </div>
+    <div>
+    <dt>대표번호
+    </dt>
+    <dd><a href="tel:+842473069889">+84 24-7306-9889</a>
+    </dd>
+    </div>
+    </dl><a class="con7__website" href="https://clinichplus.com/" target="_blank" rel="noopener noreferrer">공식 홈페이지 보기 <span aria-hidden="true">↗</span></a><a class="con7__source" href="https://www.newyjh.com/foundation/foundation-010100.html" target="_blank" rel="noopener noreferrer">서울효천의료재단 소개 ↗</a>
+    </div>
+    </dialog>
+</template>
+
+    <template id="service-reservation">
+<dialog class="hero-service-dialog" aria-labelledby="_R_0_" aria-describedby="_R_0H1_"><button class="hero-service-dialog__close" type="button" autofocus="" aria-label="안내 창 닫기">×</button>
+    <header class="hero-service-dialog__header"><span class="hero-service-dialog__icon" aria-hidden="true"><img src="images/hero/reservation-hover.svg" alt=""/></span><span class="hero-service-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="_R_0_">진료예약
+    </h2>
+    <p id="_R_0H1_">편하신 방법으로 진료를 예약해 주세요.
+    </p>
+    </header>
+    <div class="hero-service-dialog__body">
+    <div class="hero-service-dialog__info">
+    <h3>전화 · 온라인 · 카카오톡 예약
+    </h3>
+    <p>진료과와 의료진을 확인한 뒤 예약해 주세요. 실시간 진료 가능 여부는 콜센터로 문의하실 수 있습니다.
+    </p>
+    </div>
+    <dl class="hero-service-dialog__details">
+    <div>
+    <dt>예약 콜센터
+    </dt>
+    <dd>1877-8875
+    </dd>
+    </div>
+    <div>
+    <dt>평일 상담
+    </dt>
+    <dd>08:30 ~ 17:30
+    </dd>
+    </div>
+    <div>
+    <dt>토요일 상담
+    </dt>
+    <dd>08:30 ~ 12:30
+    </dd>
+    </div>
+    <div>
+    <dt>점심시간
+    </dt>
+    <dd>12:30 ~ 13:30
+    </dd>
+    </div>
+    </dl>
+    <div class="hero-service-dialog__actions"><a class="hero-service-dialog__action hero-service-dialog__action--primary" href="https://va.exona.ai/fc4e349afa004ccdba36aa6060a79803" target="_blank" rel="noopener noreferrer">공식 온라인 예약 · 조회<span aria-hidden="true"> ↗</span></a><a class="hero-service-dialog__action" href="https://pf.kakao.com/_pxijdM" target="_blank" rel="noopener noreferrer">카카오톡으로 예약하기<span aria-hidden="true"> ↗</span></a><a class="hero-service-dialog__action" href="tel:18778875">전화 예약 1877-8875</a>
+    </div>
+    <p class="hero-service-dialog__note">온라인 예약 버튼은 양지병원 공식 예약 서비스로 연결됩니다.
+    </p>
+    </div>
+    <footer class="hero-service-dialog__footer">앞선 의학, 따뜻한 마음 · 에이치플러스 양지병원
+    </footer>
+    </dialog>
+</template>
+
+    <template id="service-certificate">
+<dialog class="hero-service-dialog" aria-labelledby="_R_0_" aria-describedby="_R_0H1_"><button class="hero-service-dialog__close" type="button" autofocus="" aria-label="안내 창 닫기">×</button>
+    <header class="hero-service-dialog__header"><span class="hero-service-dialog__icon" aria-hidden="true"><img src="images/hero/certificate-hover.svg" alt=""/></span><span class="hero-service-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="_R_0_">증명서 발급
+    </h2>
+    <p id="_R_0H1_">필요한 서류와 발급 방법을 확인해 주세요.
+    </p>
+    </header>
+    <div class="hero-service-dialog__body">
+    <div class="hero-service-dialog__info">
+    <h3>방문 전 준비서류를 확인해 주세요
+    </h3>
+    <p>본인 신청 시 신분증 또는 사본이 필요합니다. 대리 신청은 신청자에 따라 신분증, 환자 신분증 사본, 동의서·위임장 등이 필요하므로 상세 안내를 확인해 주세요.
+    </p>
+    </div>
+    <dl class="hero-service-dialog__details">
+    <div>
+    <dt>발급 서류
+    </dt>
+    <dd>진료확인서 · 의무기록사본 · 진료비 관련 서류 등
+    </dd>
+    </div>
+    <div>
+    <dt>평일 사본발급
+    </dt>
+    <dd>09:00 ~ 17:30
+    </dd>
+    </div>
+    <div>
+    <dt>토요일 사본발급
+    </dt>
+    <dd>09:00 ~ 12:30
+    </dd>
+    </div>
+    <div>
+    <dt>점심시간
+    </dt>
+    <dd>12:30 ~ 13:30
+    </dd>
+    </div>
+    </dl>
+    <div class="hero-service-dialog__actions"><a class="hero-service-dialog__action hero-service-dialog__action--primary" href="https://www.newyjh.com/reservation/reservation-060000.html" target="_blank" rel="noopener noreferrer">발급 서류 · 인터넷 발급 안내<span aria-hidden="true"> ↗</span></a><a class="hero-service-dialog__action" href="tel:18778875">발급 문의 1877-8875</a>
+    </div>
+    <p class="hero-service-dialog__note">인터넷 발급은 서류 비용 외 신청 수수료가 있으며, 발급 처리 후 48시간 내 다운로드해야 합니다.
+    </p>
+    </div>
+    <footer class="hero-service-dialog__footer">앞선 의학, 따뜻한 마음 · 에이치플러스 양지병원
+    </footer>
+    </dialog>
+</template>
+
+    <template id="service-checkup">
+<dialog class="hero-service-dialog" aria-labelledby="_R_0_" aria-describedby="_R_0H1_"><button class="hero-service-dialog__close" type="button" autofocus="" aria-label="안내 창 닫기">×</button>
+    <header class="hero-service-dialog__header"><span class="hero-service-dialog__icon" aria-hidden="true"><img src="images/hero/checkup-hover.svg" alt=""/></span><span class="hero-service-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="_R_0_">건강검진
+    </h2>
+    <p id="_R_0H1_">나에게 맞는 건강검진을 상담받아 보세요.
+    </p>
+    </header>
+    <div class="hero-service-dialog__body">
+    <div class="hero-service-dialog__info">
+    <h3>건강증진센터 상담 · 예약
+    </h3>
+    <p>국민건강보험공단 검진, 개인 종합검진, 특수건강검진 등의 프로그램을 확인해 보세요. 검사별 준비사항은 예약 상담을 통해 안내받으실 수 있습니다.
+    </p>
+    </div>
+    <dl class="hero-service-dialog__details">
+    <div>
+    <dt>검진 상담번호
+    </dt>
+    <dd>1833-2211
+    </dd>
+    </div>
+    <div>
+    <dt>평일 상담
+    </dt>
+    <dd>08:00 ~ 17:00
+    </dd>
+    </div>
+    <div>
+    <dt>토요일 상담
+    </dt>
+    <dd>08:00 ~ 12:00
+    </dd>
+    </div>
+    </dl>
+    <div class="hero-service-dialog__actions"><a class="hero-service-dialog__action hero-service-dialog__action--primary" href="https://health.newyjh.com/main/main.php" target="_blank" rel="noopener noreferrer">건강검진 프로그램 · 예약 안내<span aria-hidden="true"> ↗</span></a><a class="hero-service-dialog__action" href="tel:18332211">검진 전화 상담 1833-2211</a>
+    </div>
+    <p class="hero-service-dialog__note">표시된 시간은 검진 상담·예약 시간입니다.
+    </p>
+    </div>
+    <footer class="hero-service-dialog__footer">앞선 의학, 따뜻한 마음 · 에이치플러스 양지병원
+    </footer>
+    </dialog>
+</template>
+
+    <template id="service-location">
+<dialog class="hero-service-dialog" aria-labelledby="_R_0_" aria-describedby="_R_0H1_"><button class="hero-service-dialog__close" type="button" autofocus="" aria-label="안내 창 닫기">×</button>
+    <header class="hero-service-dialog__header"><span class="hero-service-dialog__icon" aria-hidden="true"><img src="images/hero/location-hover.svg" alt=""/></span><span class="hero-service-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="_R_0_">이용안내
+    </h2>
+    <p id="_R_0H1_">양지병원 방문을 안내해 드립니다.
+    </p>
+    </header>
+    <div class="hero-service-dialog__body">
+    <div class="hero-service-dialog__info">
+    <h3>에이치플러스 양지병원 오시는 길
+    </h3>
+    <p>2호선·신림선 신림역 1번 출구 방향으로 약 100m 직진하시면 양지병원을 만나실 수 있습니다.
+    </p>
+    </div>
+    <dl class="hero-service-dialog__details">
+    <div>
+    <dt>주소
+    </dt>
+    <dd>서울시 관악구 남부순환로 1636
+    </dd>
+    </div>
+    <div>
+    <dt>지하철
+    </dt>
+    <dd>2호선 · 신림선 신림역 (도보 약 5분)
+    </dd>
+    </div>
+    <div>
+    <dt>자가용
+    </dt>
+    <dd>신림역 사거리에서 강남 방면 100m
+    </dd>
+    </div>
+    <div>
+    <dt>대표전화
+    </dt>
+    <dd>1877-8875
+    </dd>
+    </div>
+    </dl>
+    <div class="hero-service-dialog__actions"><a class="hero-service-dialog__action hero-service-dialog__action--primary" href="https://www.newyjh.com/hospital/hospital-020100.html" target="_blank" rel="noopener noreferrer">교통 · 위치 상세 안내<span aria-hidden="true"> ↗</span></a><a class="hero-service-dialog__action" href="tel:18778875">병원 이용 문의 1877-8875</a>
+    </div>
+    </div>
+    <footer class="hero-service-dialog__footer">앞선 의학, 따뜻한 마음 · 에이치플러스 양지병원
+    </footer>
+    </dialog>
+</template>
+
+    <template id="quick-phone">
+<dialog class="quick-dialog" aria-labelledby="quick-menu-dialog-title" aria-describedby="quick-menu-dialog-description"><button class="quick-dialog__close" type="button" aria-label="창 닫기" autofocus=""><span aria-hidden="true">×</span></button>
+    <header class="quick-dialog__header"><span class="quick-dialog__icon" aria-hidden="true"><img src="images/quick-menu/phone.svg" alt=""/></span><span class="quick-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="quick-menu-dialog-title">전화번호
+    </h2>
+    <p id="quick-menu-dialog-description">궁금한 점이 있으시면 편하게 연락해 주세요.
+    </p>
+    </header>
+    <div class="quick-dialog__body"><a class="quick-dialog__contact" href="tel:18778875"><span>진료예약 · 상담<strong>1877-8875</strong></span><span class="quick-dialog__badge">전화 연결</span></a><a class="quick-dialog__contact" href="tel:07046659119"><span>응급의료센터<strong>070-4665-9119</strong></span><span class="quick-dialog__badge">전화 연결</span></a>
+    <p class="quick-dialog__note">전화번호를 누르면 바로 연결됩니다.
+    </p>
+    </div>
+    <footer class="quick-dialog__footer">앞선 의학, 따뜻한 마음 <strong>에이치플러스 양지병원</strong>
+    </footer>
+    </dialog>
+</template>
+
+    <template id="quick-time">
+<dialog class="quick-dialog" aria-labelledby="quick-menu-dialog-title" aria-describedby="quick-menu-dialog-description"><button class="quick-dialog__close" type="button" aria-label="창 닫기" autofocus=""><span aria-hidden="true">×</span></button>
+    <header class="quick-dialog__header"><span class="quick-dialog__icon" aria-hidden="true"><img src="images/quick-menu/time.svg" alt=""/></span><span class="quick-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="quick-menu-dialog-title">진료시간
+    </h2>
+    <p id="quick-menu-dialog-description">방문 전 진료 일정을 확인해 주세요.
+    </p>
+    </header>
+    <div class="quick-dialog__body">
+    <div class="quick-dialog__info">
+    <h3>외래 진료 안내
+    </h3>
+    <p>진료과와 의료진에 따라 진료 일정이 다를 수 있습니다. 정확한 진료시간은 콜센터에서 확인해 주세요.
+    </p>
+    </div>
+    <div class="quick-dialog__row"><span>응급의료센터</span><strong>24시간 응급진료</strong>
+    </div><a class="quick-dialog__action" href="tel:18778875">진료시간 전화 문의</a>
+    </div>
+    <footer class="quick-dialog__footer">앞선 의학, 따뜻한 마음 <strong>에이치플러스 양지병원</strong>
+    </footer>
+    </dialog>
+</template>
+
+    <template id="quick-reservation">
+<dialog class="quick-dialog" aria-labelledby="quick-menu-dialog-title" aria-describedby="quick-menu-dialog-description"><button class="quick-dialog__close" type="button" aria-label="창 닫기" autofocus=""><span aria-hidden="true">×</span></button>
+    <header class="quick-dialog__header"><span class="quick-dialog__icon" aria-hidden="true"><img src="images/quick-menu/reservation.svg" alt=""/></span><span class="quick-dialog__brand">H+ YANGJI HOSPITAL</span>
+    <h2 id="quick-menu-dialog-title">예약조회
+    </h2>
+    <p id="quick-menu-dialog-description">예약하신 진료 일정을 확인해 보세요.
+    </p>
+    </header>
+    <div class="quick-dialog__body">
+    <div class="quick-dialog__demo"><span>체험용</span> 예시 정보를 입력하고 예약조회 화면을 체험해 보세요.
+    </div>
+    <form class="reservation-form"><label for="reservation-name">예약자 이름</label><input id="reservation-name" placeholder="예: 홍길동" required="" maxLength="30" pattern=".*\S.*" autoComplete="off" name="name"/><label for="reservation-phone">연락처</label><input id="reservation-phone" type="tel" inputMode="tel" placeholder="예: 010-1234-5678" required="" pattern="[0-9]{3}-?[0-9]{3,4}-?[0-9]{4}" title="010-1234-5678 또는 숫자만 입력해 주세요." maxLength="13" autoComplete="off" name="phone"/><label for="reservation-number">예약번호 <span>선택</span></label><input id="reservation-number" placeholder="예: YJ-2026-001" maxLength="30" autoComplete="off" name="reservationNumber"/><button class="quick-dialog__action" type="submit">예약 조회하기</button>
+    </form>
+    <div aria-live="polite" aria-atomic="true">
+    </div>
+    <p class="quick-dialog__note">실제 예약과 연결되지 않으며 입력 내용은 전송·저장되지 않습니다.
+    </p><a class="reservation-help" href="tel:18778875">실제 예약 문의 1877-8875</a>
+    </div>
+    <footer class="quick-dialog__footer">앞선 의학, 따뜻한 마음 <strong>에이치플러스 양지병원</strong>
+    </footer>
+    </dialog>
+</template>
+
+    <template id="mobile-help">
+<div class="mobile-help"><button class="mobile-help__backdrop" type="button" aria-label="도움창 닫기"></button>
+    <section class="mobile-help__panel" id="mobile-help-panel" aria-labelledby="mobile-help-title">
+    <h2 id="mobile-help-title">무엇을 도와드릴까요?
+    </h2>
+    <p>필요한 안내를 선택해 주세요.
+    </p>
+    <nav class="mobile-help__links" aria-label="모바일 빠른 서비스"><button type="button" aria-haspopup="dialog"><img src="images/quick-menu/reservation.svg" alt=""/><span>진료예약</span></button><button type="button" aria-haspopup="dialog"><img src="images/quick-menu/phone.svg" alt=""/><span>전화문의</span></button><a href="https://pf.kakao.com/_pxijdM" target="_blank" rel="noopener noreferrer" aria-label="양지병원 카카오톡 문의 (새 탭)"><img src="images/quick-menu/talk.svg" alt=""/><span>카카오톡</span></a>
+    </nav>
+    </section><button class="mobile-help__trigger" type="button" aria-expanded="true" aria-controls="mobile-help-panel"><span aria-hidden="true">×</span>닫기</button>
+    </div>
+</template>
+</body>
 </html>
-
-
-
