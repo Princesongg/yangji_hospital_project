@@ -8,6 +8,49 @@
     const originalDepartments = $('.con1').cloneNode(true);
     let centerIndex = 0;
 
+    const header = $('.hero-header');
+    const hoverHeader = matchMedia('(min-width: 901px) and (hover: hover) and (pointer: fine)');
+    let headerHeight = header.offsetHeight;
+    let pointerY = Infinity;
+    let headerRevealed = false;
+    let keyboardNavigation = true;
+
+    function syncHeader() {
+        if (pointerY <= 24) headerRevealed = true;
+        else if (pointerY > headerHeight + 12) headerRevealed = false;
+        const keyboardFocus = keyboardNavigation && header.contains(document.activeElement);
+        const hidden = hoverHeader.matches && window.scrollY > headerHeight
+            && !headerRevealed && !keyboardFocus;
+        header.classList.toggle('hero-header--hidden', hidden);
+    }
+    window.addEventListener('scroll', syncHeader, { passive: true });
+    document.addEventListener('pointerdown', event => {
+        keyboardNavigation = false;
+        pointerY = event.clientY;
+        syncHeader();
+    }, { passive: true });
+    document.addEventListener('keydown', () => {
+        keyboardNavigation = true;
+        syncHeader();
+    });
+    document.addEventListener('pointermove', event => {
+        if (!hoverHeader.matches || event.pointerType !== 'mouse') return;
+        pointerY = event.clientY;
+        syncHeader();
+    }, { passive: true });
+    document.documentElement.addEventListener('pointerleave', () => {
+        pointerY = Infinity;
+        syncHeader();
+    });
+    header.addEventListener('focusin', syncHeader);
+    header.addEventListener('focusout', () => queueMicrotask(syncHeader));
+    window.addEventListener('resize', () => {
+        headerHeight = header.offsetHeight;
+        syncHeader();
+    });
+    hoverHeader.addEventListener('change', syncHeader);
+    syncHeader();
+
     function selectCenter(index) {
         centerIndex = Math.max(0, Math.min(11, index));
         const source = $(`#center-${centerIndex}`).content;

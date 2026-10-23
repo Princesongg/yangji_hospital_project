@@ -81,9 +81,21 @@
 .hero-emergency__line { position: absolute; left: calc(570 * var(--u)); top: calc(47.5 * var(--u)); width: 132px; height: 6px; max-width: none; transform: scale(calc(798 * var(--u) / 798px)); transform-origin: top left; }
 
 @media (min-width: 901px) {
-    .hero-header { position: relative; left: calc(-0.5 * var(--u)); }
-    .hero__background { position: relative; top: calc(-1 * var(--u)); }
-    .hero-services { margin-top: calc(58 * var(--u)); }
+    .hospital-home { position: relative; }
+    .hero-header { position: fixed; inset: 0 0 auto; z-index: 40; width: 100%; max-width: 1920px; height: calc(80 * var(--u)); padding: 0; align-items: center; background: #fff; transform: translateY(0); transition: transform .2s ease; }
+    .hero-header--hidden { transform: translateY(-100%); pointer-events: none; }
+    .hero-header__symbol { width: 44.8495px; height: 32.4654px; transform: scale(calc(var(--u) / 1px)); transform-origin: top left; }
+    .hero-header__wordmark { left: calc(59.803 * var(--u)); top: calc(3.983 * var(--u)); width: 89.6972px; height: 24.7337px; transform: scale(calc(var(--u) / 1px)); transform-origin: top left; }
+    .hero-header__nav { flex: 0 0 auto; }
+    .hero-header__nav button { font-size: calc(16 * var(--u)); }
+    .hero-header__nav button:nth-child(n) { width: auto; }
+    .hero-header__nav button:nth-child(2) { width: calc(133 * var(--u)); }
+    .hero-header__account { flex: 0 0 auto; font-size: calc(16 * var(--u)); }
+    .hero { height: calc(910 * var(--u)); }
+    .hero > picture { display: block; height: 100%; }
+    .hero__headline { top: calc(329 * var(--u)); }
+    .hero-search { top: calc(541 * var(--u)); }
+    .hero-services { margin-top: calc(83 * var(--u)); }
 }
 
 @media (max-width: 900px) {
@@ -103,6 +115,7 @@
     .hero-emergency { width: min(518.7px, 100%); }
 }
 @media (prefers-reduced-motion: reduce) {
+    .hero-header { transition: none; }
     .hero-service__box { transition: none; }
 }
 
