@@ -1,13 +1,25 @@
 <svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .medical-orbit { transform-origin: 360px 360px; animation: medical-orbit-turn 24s linear infinite reverse; }
+  .medical-orbit--dashed { animation-duration: 60s; animation-direction: reverse; }
+  .medical-orbit-pulse { transform-origin: 360px 155px; animation: medical-orbit-breathe 6s ease-in-out infinite; }
+  @keyframes medical-orbit-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.45); } }
+  @keyframes medical-orbit-turn { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .medical-orbit, .medical-orbit-pulse { animation: none; } }
+</style>
 <g id="Group">
 <path id="Vector" d="M360 720C558.823 720 720 558.823 720 360C720 161.177 558.823 0 360 0C161.177 0 0 161.177 0 360C0 558.823 161.177 720 360 720Z" fill="#FFEFF0"/>
 <path id="Vector_2" d="M360 666C528.999 666 666 528.999 666 360C666 191.001 528.999 54 360 54C191.001 54 54 191.001 54 360C54 528.999 191.001 666 360 666Z" stroke="#FF6167" stroke-opacity="0.3" stroke-width="2"/>
-<path id="Vector_3" d="M360 598C491.444 598 598 491.444 598 360C598 228.556 491.444 122 360 122C228.556 122 122 228.556 122 360C122 491.444 228.556 598 360 598Z" stroke="#FF6167" stroke-width="2" stroke-dasharray="9 13"/>
+<path class="medical-orbit medical-orbit--dashed" id="Vector_3" d="M360 598C491.444 598 598 491.444 598 360C598 228.556 491.444 122 360 122C228.556 122 122 228.556 122 360C122 491.444 228.556 598 360 598Z" stroke="#FF6167" stroke-width="2" stroke-dasharray="9 13"/>
 <path id="Vector_4" d="M360 525C451.127 525 525 451.127 525 360C525 268.873 451.127 195 360 195C268.873 195 195 268.873 195 360C195 451.127 268.873 525 360 525Z" stroke="#768B91" stroke-opacity="0.18" stroke-width="2"/>
 <path id="Vector_5" d="M52 360H668M360 52V668" stroke="#819398" stroke-opacity="0.12"/>
+<g class="medical-orbit">
 <path id="Vector_6" d="M360 155C414.369 155 466.512 176.598 504.957 215.043C543.402 253.488 565 305.631 565 360C565 414.369 543.402 466.512 504.957 504.957C466.512 543.402 414.369 565 360 565" stroke="#ED1C24" stroke-width="4" stroke-linecap="round" stroke-dasharray="85 25"/>
 <path id="Vector_7" d="M360 163C364.418 163 368 159.418 368 155C368 150.582 364.418 147 360 147C355.582 147 352 150.582 352 155C352 159.418 355.582 163 360 163Z" fill="#ED1C24"/>
+<g class="medical-orbit-pulse">
 <path id="Vector_8" d="M360 177C372.15 177 382 167.15 382 155C382 142.85 372.15 133 360 133C347.85 133 338 142.85 338 155C338 167.15 347.85 177 360 177Z" stroke="#ED1C24" stroke-opacity="0.24" stroke-width="2"/>
+</g>
+</g>
 <path id="Vector_9" d="M420 228H300C260.235 228 228 260.235 228 300V420C228 459.764 260.235 492 300 492H420C459.764 492 492 459.764 492 420V300C492 260.235 459.764 228 420 228Z" fill="white" fill-opacity="0.64" stroke="white"/>
 <path id="Vector_10" d="M294 360H426M360 294V426" stroke="#FF6167" stroke-width="34" stroke-linecap="round"/>
 </g>
