@@ -51,6 +51,36 @@
     hoverHeader.addEventListener('change', syncHeader);
     syncHeader();
 
+    const quickMenu = $('.quick-menu');
+    const quickToggle = $('.quick-menu__toggle', quickMenu);
+    const quickPanel = $('.quick-menu__panel', quickMenu);
+    const compactQuickMenu = matchMedia('(max-width: 900px)');
+
+    function setQuickMenu(open, restoreFocus = false) {
+        const expanded = compactQuickMenu.matches && open;
+        quickMenu.classList.toggle('quick-menu--open', expanded);
+        quickToggle.setAttribute('aria-expanded', String(expanded));
+        quickToggle.setAttribute('aria-label', `빠른 서비스 메뉴 ${expanded ? '닫기' : '열기'}`);
+        quickPanel.inert = compactQuickMenu.matches && !expanded;
+        if (restoreFocus) quickToggle.focus();
+    }
+    quickToggle.addEventListener('click', () => {
+        setQuickMenu(quickToggle.getAttribute('aria-expanded') !== 'true');
+    });
+    document.addEventListener('pointerdown', event => {
+        if (!quickMenu.contains(event.target)) setQuickMenu(false);
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && quickToggle.getAttribute('aria-expanded') === 'true') {
+            setQuickMenu(false, true);
+        }
+    });
+    quickMenu.addEventListener('focusout', event => {
+        if (!quickMenu.contains(event.relatedTarget)) setQuickMenu(false);
+    });
+    compactQuickMenu.addEventListener('change', () => setQuickMenu(false));
+    setQuickMenu(false);
+
     function selectCenter(index) {
         centerIndex = Math.max(0, Math.min(11, index));
         const source = $(`#center-${centerIndex}`).content;

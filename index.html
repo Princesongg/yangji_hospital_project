@@ -2568,13 +2568,23 @@
       </footer>
       <nav class="quick-menu" aria-label="빠른 서비스 메뉴">
         <button
+          class="quick-menu__toggle"
+          type="button"
+          aria-label="빠른 서비스 메뉴 열기"
+          aria-expanded="false"
+          aria-controls="quick-menu-panel"
+        >
+          <span class="quick-menu__toggle-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>QUICK</span>
+        </button>
+        <button
           class="quick-menu__top"
           type="button"
           aria-label="페이지 맨 위로 이동"
         >
           <img src="images/quick-menu/top.svg" alt="" /><span>TOP</span>
         </button>
-        <div class="quick-menu__panel">
+        <div class="quick-menu__panel" id="quick-menu-panel">
           <button
             class="quick-menu__item"
             type="button"
